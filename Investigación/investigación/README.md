@@ -69,6 +69,45 @@ Investigación formativa sobre el estado actual, características, desafíos y o
 
 ---
 
+## 📈 ANÁLISIS DE DATOS
+
+### Descripción
+
+En esta etapa se deben analizar e interpretar los datos recogidos en la fase 2 de ejecución.
+
+### Resultados de la Encuesta - Colombia 4.0 Bogotá
+
+Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se descubrió que el **73% juega en dispositivos móviles**, el **18% en consola** y el **9% en PC**. Adicionalmente descubrimos que el tiempo promedio semanal es del **8%** y el **40% ha comprado y descargado juegos desarrollados aquí**, y ese mismo porcentaje identifica el reto para la industria en Colombia por la falta de inversión y apoyo del gobierno. Adicionalmente descubrimos una plataforma que apoya a los desarrolladores de videojuegos llamada **"Tan Grande y Jugando"**, y solo el **10% participa en alguna comunidad**. La compra promedio entre los jugadores fue de **$70.000 a $100.000**.
+
+### 📊 Estadísticas Clave
+
+| Métrica | Porcentaje/Valor | Descripción |
+|---------|------------------|-------------|
+| 📱 Dispositivos Móviles | **73%** | Porcentaje de jugadores que juegan en móviles |
+| 🎮 Consolas | **18%** | Porcentaje de jugadores que juegan en consolas |
+| 💻 PC | **9%** | Porcentaje de jugadores que juegan en PC |
+| 🛒 Compra de Juegos Nacionales | **40%** | Porcentaje que ha comprado/descargado juegos desarrollados en Colombia |
+| ⚠️ Reto Principal | **40%** | Identifican falta de inversión y apoyo del gobierno |
+| 👥 Participación en Comunidades | **10%** | Porcentaje que participa en alguna comunidad |
+| 💰 Compra Promedio | **$70.000 - $100.000** | Rango de compra promedio entre jugadores |
+| ⏰ Tiempo Promedio Semanal | **8%** | Tiempo promedio de juego semanal |
+
+### Hallazgos Importantes
+
+1. **Dominancia del móvil**: El 73% de los encuestados juega principalmente en dispositivos móviles, lo que indica una tendencia clara hacia el gaming móvil en Colombia.
+
+2. **Apoyo a desarrolladores locales**: El 40% ha comprado o descargado juegos desarrollados en Colombia, mostrando un interés en el contenido local.
+
+3. **Retos identificados**: El 40% de los encuestados identifica la falta de inversión y apoyo gubernamental como el principal reto para la industria.
+
+4. **Plataforma de apoyo**: Se descubrió la plataforma **"Tan Grande y Jugando"** que apoya a desarrolladores de videojuegos.
+
+5. **Baja participación en comunidades**: Solo el 10% participa en comunidades de juegos, indicando una oportunidad de crecimiento.
+
+6. **Gasto promedio**: Los jugadores invierten entre $70.000 y $100.000 pesos colombianos en promedio en videojuegos.
+
+---
+
 ## 📝 Notas
 
 - Los archivos Excel deben tener formato `.xlsx`
