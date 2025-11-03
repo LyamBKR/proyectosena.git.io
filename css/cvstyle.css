@@ -1,0 +1,288 @@
+/* General Styles and Reset */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0; /* Remove default margin */
+    min-height: 100vh;
+}
+
+.cv-container {
+    width: 100%;
+    max-width: 900px;
+    background: linear-gradient(135deg, #1e1e1e, #2e2e2e);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Header and Titles */
+.cv-header {
+    padding: 30px 40px 20px;
+    background: linear-gradient(135deg, #0078f2, #7c3aed);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Language Toggle Button */
+.language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
+}
+
+.lang-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.job-title {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+}
+
+.names {
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.names .first-name,
+.names .last-name {
+    display: block;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.names .first-name {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.names .last-name {
+    color: #ffffff;
+}
+
+/* Main Body with Two Columns */
+.cv-body {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Left Column (Sidebar) */
+.cv-sidebar {
+    width: 35%;
+    padding: 30px 20px 30px 40px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.cv-sidebar h2 {
+    color: #00d4aa;
+    font-size: 1.25em;
+    border-bottom: 2px solid #00d4aa;
+    padding-bottom: 8px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.cv-sidebar p,
+.cv-sidebar li {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cv-sidebar hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 25px 0;
+}
+
+.cv-sidebar a {
+    color: #00d4aa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cv-sidebar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.skills-list,
+.language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li::before {
+    content: "•";
+    color: #00d4aa;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: bold;
+}
+
+/* Right Column (Main Content) */
+.cv-content {
+    width: 65%;
+    padding: 30px 40px 30px 30px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1e1e1e, #2e2e2e);
+}
+
+.cv-content h2 {
+    font-size: 1.5em;
+    color: #00d4aa;
+    border-bottom: 3px solid #00d4aa;
+    padding-bottom: 8px;
+    margin: 0 0 25px 0;
+    font-weight: 700;
+}
+
+.section-block {
+    margin-bottom: 35px;
+}
+
+.section-block p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+/* Experience and Education Entries */
+.job-entry,
+.education-entry {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.job-entry:hover,
+.education-entry:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-entry h3,
+.education-entry h3 {
+    font-size: 1.2em;
+    margin: 0 0 5px 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.job-entry h4,
+.education-entry h4 {
+    color: #00d4aa;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.company-date,
+.school-date {
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 3px 0 10px 0;
+    display: block;
+    font-style: italic;
+}
+
+.job-entry ul {
+    font-size: 0.95em;
+    padding-left: 20px;
+    margin-top: 8px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.job-entry li {
+    margin-bottom: 8px;
+}
+
+/* Education Entry Specific */
+.education-entry {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-entry:last-of-type {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-body {
+        flex-direction: column;
+    }
+
+    .cv-sidebar,
+    .cv-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cv-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cv-header {
+        padding: 20px;
+    }
+
+    .names .first-name,
+    .names .last-name {
+        font-size: 1.8em;
+    }
+
+    .language-toggle {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    #languageBtn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
