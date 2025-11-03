@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Recolección de información - Proyecto SENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    
+</head>
+<body>
+    <div class="page-container">
+        <!-- Epic Header Section -->
+        <div class="epic-header">
+            <div class="hero-badge">
+                <span class="badge-icon">📊</span>
+                <span class="badge-text">Información</span>
+            </div>
+            <h1 class="epic-title">4. Recolección de información</h1>
+            <p class="epic-subtitle">Proyecto SENA - Análisis y desarrollo de software | <strong>Desarrollador: Lyam Acosta Forero</strong></p>
+            <a href="#manual" class="pdf-viewer-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                VER PDF
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">Proyecto SENA</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#proyecto" class="nav-link dropdown-toggle" onclick="toggleProyectoDropdown()">Proyecto</a>
+                        <div class="dropdown-menu modules-dropdown">
+                            <a href="../1. Introduccion/1. Introduccion.html" class="dropdown-item" data-category="introduccion">
+                                <span class="dropdown-icon">📋</span>
+                                1. Introducción
+                            </a>
+                            <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html" class="dropdown-item" data-category="procesos">
+                                <span class="dropdown-icon">⚙️</span>
+                                2. Procesos organizacionales
+                            </a>
+                            <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html" class="dropdown-item" data-category="requisitos">
+                                <span class="dropdown-icon">📝</span>
+                                3. Ingeniería de requisitos
+                            </a>
+                            <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html" class="dropdown-item active" data-category="informacion">
+                                <span class="dropdown-icon">📊</span>
+                                4. Recolección de información
+                            </a>
+                            <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html" class="dropdown-item" data-category="formulacion">
+                                <span class="dropdown-icon">📋</span>
+                                5. Formulación de Proyecto
+                            </a>
+                            <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🛠️</span>
+                                6. Formulario de recolección de información
+                            </a>
+                            <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                7. Especificación de Requerimientos
+                            </a>
+                            <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">✅</span>
+                                8. Evaluación de requerimientos
+                            </a>
+                            <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🔄</span>
+                                9. Metodologías de desarrollo
+                            </a>
+                            <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                10. Metodología para el proyecto
+                            </a>
+                            <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">🌐</span>
+                                11. Software y servicios de internet
+                            </a>
+                            <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">💻</span>
+                                12. Mejora de productos y procesos con la incorporación de TIC
+                            </a>
+                            <a href="../13. Diagramas para la especificación y análisis de requisitos/13. Diagramas para la especificación y análisis de requisitos.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">📊</span>
+                                13. Diagramas para la especificación y análisis de requisitos
+                            </a>
+                            <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">📈</span>
+                                14. Diagramas y plantillas para casos de uso del proyecto
+                            </a>
+                            <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">👥</span>
+                                15. Historias de usuario del proyecto
+                            </a>
+                            <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">🏗️</span>
+                                16. Modelo del dominio del Proyecto
+                            </a>
+                            <a href="../17. Validación de Documentos/17. Validación de Documentos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">✅</span>
+                                17. Validación de Documentos
+                            </a>
+                            <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">📝</span>
+                                18. Listas de chequeo para la validación de artefactos
+                            </a>
+                            <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">💰</span>
+                                19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas
+                            </a>
+                            <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📋</span>
+                                20. Ficha técnica de los productos requeridos
+                            </a>
+                            <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📊</span>
+                                21. Diseño de tablas comparativas sobre presupuestos de hardware y software
+                            </a>
+                            <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📈</span>
+                                22. Propuesta técnica y económica para la implementación del proyecto
+                            </a>
+                            <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                23. Modelos conceptual y lógico para el proyecto
+                            </a>
+                            <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">📄</span>
+                                24. Informe de entregables para el proyecto de desarrollo de software
+                            </a>
+                            <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🔗</span>
+                                25. Diagrama de Clases del proyecto de software
+                            </a>
+                            <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏛️</span>
+                                26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado
+                            </a>
+                            <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                27. Arquitectura de Software
+                            </a>
+                            <a href="../28. Validación de Documentos/28. Validación de Documentos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">✅</span>
+                                28. Validación de Documentos
+                            </a>
+                            <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                29. Instrumentos para verificación de artefactos
+                            </a>
+                            <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad
+                            </a>
+                            <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🗄️</span>
+                                31. Crear un modelo de base de datos con base a los requerimientos del cliente
+                            </a>
+                            <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💾</span>
+                                32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)
+                            </a>
+                            <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🖥️</span>
+                                33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles
+                            </a>
+                            <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                34. Generar plantillas y estilos
+                            </a>
+                            <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                35. Configurar herramientas de versionamiento para control de código
+                            </a>
+                            <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💻</span>
+                                36. Aplicar estándares de codificación
+                            </a>
+                            <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">⚙️</span>
+                                37. Codificar los módulos del software Stand-alone, web y móvil
+                            </a>
+                            <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🌐</span>
+                                38. Codificar el frontend utilizando framework
+                            </a>
+                            <a href="../39. Crear servicios web/39. Crear servicios web.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔗</span>
+                                39. Crear servicios web
+                            </a>
+                            <a href="../40. Integrar módulos/40. Integrar módulos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                40. Integrar módulos
+                            </a>
+                            <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🚀</span>
+                                41. Incorporar tecnologías emergentes y disruptivas
+                            </a>
+                            <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🧪</span>
+                                42. Realizar plan de pruebas
+                            </a>
+                            <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                43. Definir casos y ambiente de prueba
+                            </a>
+                            <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📝</span>
+                                44. Documentar y realizar pruebas
+                            </a>
+                            <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🖥️</span>
+                                45. Preparar la plataforma tecnológica
+                            </a>
+                            <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">✅</span>
+                                46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado
+                            </a>
+                            <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                47. Elaborar el plan de instalación
+                            </a>
+                            <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">⚙️</span>
+                                48. Configurar los servicios requeridos
+                            </a>
+                            <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🗄️</span>
+                                49. Configurar el software en el servidor y la base de datos
+                            </a>
+                            <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📤</span>
+                                50. Cargar archivos en el sitio de publicación
+                            </a>
+                            <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🧪</span>
+                                51. Realizar pruebas de funcionalidad del software
+                            </a>
+                            <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔧</span>
+                                52. Elaborar planes de mantenimiento y soporte del software
+                            </a>
+                            <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📄</span>
+                                53. Documentar el proceso de migración y respaldo de los datos
+                            </a>
+                            <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📚</span>
+                                54. Elaborar manuales de instalación, técnico y de usuario
+                            </a>
+                            <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">👤</span>
+                                55. Elaborar el manual de usuario
+                            </a>
+                            <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🎓</span>
+                                56. Capacitar a los usuarios y realizar pruebas de aceptación
+                            </a>
+                            <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📋</span>
+                                57. Elaborar acta de entrega
+                            </a>
+                            <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">⭐</span>
+                                58. Aplicar los instrumentos de calidad de software
+                            </a>
+                            <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📊</span>
+                                59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas
+                            </a>
+                            <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔄</span>
+                                60. Ajustar procesos del desarrollo de software
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#desarrollador" class="nav-link dropdown-toggle" onclick="toggleDropdown()">Desarrollador</a>
+                        <div class="dropdown-menu">
+                            <a href="https://github.com/LyamBKR" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">🐙</span>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/lyam-acosta-forero-11aa34204/" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="../cv/cvspanish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV Español
+                            </a>
+                            <a href="../cv/cvenglish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV English
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Introducción -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📊 Recolección de Información</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <h3>Proceso de Recolección de Información</h3>
+                                <p>La recolección de datos es un paso importante en el proceso de investigación. El instrumento que elijas para recolectar los datos dependerá de los tipos de datos que pienses recolectar (cualitativos o cuantitativos) y de cómo pienses recolectarlos.</p>
+                                <div class="intro-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📊</div>
+                                        <div class="feature-text">Datos Cualitativos</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📈</div>
+                                        <div class="feature-text">Datos Cuantitativos</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔍</div>
+                                        <div class="feature-text">Análisis</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📋</div>
+                                        <div class="feature-text">Documentación</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Instrumentos de Recolección -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🔧 Instrumentos para Recopilar Información</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>En la investigación se utilizan varios instrumentos para recopilar información:</p>
+                        <div class="instruments-grid">
+                            <div class="instrument-card">
+                                <div class="instrument-icon">🎤</div>
+                                <div class="instrument-content">
+                                    <h3>Entrevistas</h3>
+                                    <p>Recopilación de información mediante conversaciones directas con usuarios y stakeholders</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">👁️</div>
+                                <div class="instrument-content">
+                                    <h3>Observaciones</h3>
+                                    <p>Análisis del comportamiento del usuario durante el uso del software</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">📄</div>
+                                <div class="instrument-content">
+                                    <h3>Documentos de Archivo</h3>
+                                    <p>Revisión de fuentes gubernamentales y documentación existente</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">🧪</div>
+                                <div class="instrument-content">
+                                    <h3>Experimentos de Laboratorio</h3>
+                                    <p>Pruebas controladas en entornos específicos</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">📝</div>
+                                <div class="instrument-content">
+                                    <h3>Cuestionarios</h3>
+                                    <p>Encuestas en papel o cuestionarios online para recopilar datos estructurados</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">👥</div>
+                                <div class="instrument-content">
+                                    <h3>Focus Groups</h3>
+                                    <p>Grupos de discusión presenciales o online para obtener perspectivas grupales</p>
+                                </div>
+                            </div>
+                            
+                            <div class="instrument-card">
+                                <div class="instrument-icon">🌐</div>
+                                <div class="instrument-content">
+                                    <h3>Comunidades Online</h3>
+                                    <p>Análisis de interacciones y feedback en plataformas digitales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Metodología del Proyecto -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🎯 Metodología para Nuestro Proyecto</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="methodology-highlight">
+                            <div class="methodology-content">
+                                <h3>Enfoque en Entrevistas</h3>
+                                <p>Usaremos entrevistas para el propósito de este proyecto formativo. Crearemos este formato de recolección de información donde verificaremos junto con el usuario si encontró problemas durante la jugabilidad inicial del prototipo. Este formato lo usaremos en cada versión para que junto con QA podamos revisar cada versión y con ello evitar la máxima cantidad de Bugs posible en el Software.</p>
+                                <div class="methodology-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎮</div>
+                                        <div class="feature-text">Jugabilidad</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔍</div>
+                                        <div class="feature-text">Verificación</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🐛</div>
+                                        <div class="feature-text">Control de Bugs</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📋</div>
+                                        <div class="feature-text">QA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Formato de Entrevista -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📋 Formato de Entrevista para Videojuegos</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="interview-sections-grid">
+                            <div class="interview-section-card">
+                                <div class="interview-icon">📊</div>
+                                <div class="interview-content">
+                                    <h3>Información General del Juego</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Nombre:</strong> Identificación del videojuego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Género:</strong> Categoría y tipo de juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Plataformas:</strong> Sistemas en los que se lanzó
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Fecha de lanzamiento:</strong> Cuándo fue publicado
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Versión actual:</strong> Número de versión del software
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interview-section-card">
+                                <div class="interview-icon">🎮</div>
+                                <div class="interview-content">
+                                    <h3>Mecánicas del Juego</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Objetivo principal:</strong> Meta principal del juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Mecánicas:</strong> Sistemas de juego implementados
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>¿Es Single Player?:</strong> Modo de juego individual o multijugador
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Progresión del Juego:</strong> Sistema de avance y desarrollo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interview-section-card">
+                                <div class="interview-icon">⚙️</div>
+                                <div class="interview-content">
+                                    <h3>Aspectos Técnicos</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Motor de Desarrollo:</strong> Herramienta utilizada para crear el juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Lenguajes de programación:</strong> Tecnologías de código utilizadas
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Requisitos del sistema:</strong> Especificaciones técnicas necesarias
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interview-section-card">
+                                <div class="interview-icon">🎨</div>
+                                <div class="interview-content">
+                                    <h3>Diseño Visual y Sonoro</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Estilo gráfico:</strong> Aesthetic y dirección artística
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Modelos:</strong> Diseño de personajes y objetos 3D/2D
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Música y efectos de sonido:</strong> Audio del juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Diseño de niveles:</strong> Estructura y layout de los escenarios
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interview-section-card">
+                                <div class="interview-icon">📖</div>
+                                <div class="interview-content">
+                                    <h3>Contenido y Narrativa</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Historia o lore:</strong> Narrativa principal del juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Personajes:</strong> Principales y secundarios del juego
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Escenarios:</strong> Mundos, niveles y entornos
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Sistema de misiones:</strong> Objetivos y eventos del juego
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interview-section-card">
+                                <div class="interview-icon">⭐</div>
+                                <div class="interview-content">
+                                    <h3>Experiencia del Usuario y Calidad</h3>
+                                    <div class="interview-items">
+                                        <div class="interview-item">
+                                            <strong>Interfaz de usuario (UI/UX):</strong> Diseño de la interfaz
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Dificultad y curva de aprendizaje:</strong> Nivel de complejidad
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Opiniones de jugadores:</strong> Reseñas y calificaciones
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Frecuencia de errores:</strong> Bugs reportados
+                                        </div>
+                                        <div class="interview-item">
+                                            <strong>Rendimiento:</strong> Performance en diferentes plataformas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </section>
+
+                <!-- Proceso de Aplicación -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🔄 Proceso de Aplicación</h2>
+                            </div>
+                    <div class="section-content">
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Preparación</h3>
+                                    <p>Diseño del formato de entrevista basado en los aspectos clave del videojuego</p>
+                            </div>
+                            </div>
+                            
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Ejecución</h3>
+                                    <p>Realización de entrevistas con usuarios y stakeholders del proyecto</p>
+                            </div>
+                        </div>
+
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Análisis</h3>
+                                    <p>Evaluación de los resultados y identificación de problemas y mejoras</p>
+                            </div>
+                        </div>
+
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>Iteración</h3>
+                                    <p>Aplicación de mejoras y repetición del proceso en cada versión</p>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                </section>
+
+                <!-- Formulario de Entrevista -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📝 Formulario de Entrevista - Herramienta N° <input type="number" class="tool-number-input" placeholder="1" min="1" max="999" value="1"></h2>
+                            </div>
+                    <div class="section-content">
+                        <div class="form-table-container">
+                            <table class="form-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" class="form-section-header">INFORMACIÓN GENERAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Fecha</strong></td>
+                                        <td><input type="date" class="form-input-field" id="fecha" title="Fecha de la entrevista"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Código Formulario</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Código del formulario"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Código empleado</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Código del empleado"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Identificación</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Número de identificación"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Nombre del Software</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Nombre del software"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Fecha de creación</strong></td>
+                                        <td><input type="date" class="form-input-field" id="fecha-creacion" title="Fecha de creación del software"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Personal a cargo</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Nombre del personal responsable"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Código</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Código del personal"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                        <div class="form-table-container">
+                            <table class="form-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" class="form-section-header">PROPÓSITO DEL ESTUDIO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <textarea class="form-textarea" placeholder="Aquí se revisará el propósito del estudio ya sea por marketing ante un nuevo software o la revisión de un software ya existente"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                        <div class="form-table-container">
+                            <table class="form-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" class="form-section-header">ASPECTOS TÉCNICOS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Lenguaje de programación usado</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Lenguaje de programación"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Versión (En caso de que ya haya sido lanzado al público)</strong></td>
+                                        <td><input type="text" class="form-input-field" placeholder="Versión del software"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+
+                        <div class="form-table-container">
+                            <table class="form-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" class="form-section-header">EVALUACIÓN DEL USUARIO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>¿Cómo califica el software en una escala de 1 a 10?</strong></td>
+                                        <td>
+                                            <div class="form-scale">
+                                                <input type="radio" name="rating" value="1" class="form-radio" id="rating-1">
+                                                <label for="rating-1">1</label>
+                                                <input type="radio" name="rating" value="2" class="form-radio" id="rating-2">
+                                                <label for="rating-2">2</label>
+                                                <input type="radio" name="rating" value="3" class="form-radio" id="rating-3">
+                                                <label for="rating-3">3</label>
+                                                <input type="radio" name="rating" value="4" class="form-radio" id="rating-4">
+                                                <label for="rating-4">4</label>
+                                                <input type="radio" name="rating" value="5" class="form-radio" id="rating-5">
+                                                <label for="rating-5">5</label>
+                                                <input type="radio" name="rating" value="6" class="form-radio" id="rating-6">
+                                                <label for="rating-6">6</label>
+                                                <input type="radio" name="rating" value="7" class="form-radio" id="rating-7">
+                                                <label for="rating-7">7</label>
+                                                <input type="radio" name="rating" value="8" class="form-radio" id="rating-8">
+                                                <label for="rating-8">8</label>
+                                                <input type="radio" name="rating" value="9" class="form-radio" id="rating-9">
+                                                <label for="rating-9">9</label>
+                                                <input type="radio" name="rating" value="10" class="form-radio" id="rating-10">
+                                                <label for="rating-10">10</label>
+                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Ha sufrido algún error usando el Software?</strong></td>
+                                        <td>
+                                            <input type="radio" name="errors" value="si" class="form-radio" id="errors-si">
+                                            <label for="errors-si">Sí</label>
+                                            <input type="radio" name="errors" value="no" class="form-radio" id="errors-no">
+                                            <label for="errors-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Ha tenido buenas experiencias con el software?</strong></td>
+                                        <td>
+                                            <input type="radio" name="experience" value="si" class="form-radio" id="experience-si">
+                                            <label for="experience-si">Sí</label>
+                                            <input type="radio" name="experience" value="no" class="form-radio" id="experience-no">
+                                            <label for="experience-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Si la respuesta anterior es no ¿Qué sucedió?</strong></td>
+                                        <td><textarea class="form-textarea" placeholder="Describa qué problemas experimentó"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Siente que alguna característica en el Software es inútil para usted?</strong></td>
+                                        <td>
+                                            <input type="radio" name="useless" value="si" class="form-radio" id="useless-si">
+                                            <label for="useless-si">Sí</label>
+                                            <input type="radio" name="useless" value="no" class="form-radio" id="useless-no">
+                                            <label for="useless-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Cuál considera la característica más importante para usted?</strong></td>
+                                        <td><textarea class="form-textarea" placeholder="Describa la característica más importante"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Cuál sería una característica la cual usted desearía?</strong></td>
+                                        <td><textarea class="form-textarea" placeholder="Describa características que le gustaría ver"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Siente que este software cumplió su necesidad?</strong></td>
+                                        <td>
+                                            <input type="radio" name="needs" value="si" class="form-radio" id="needs-si">
+                                            <label for="needs-si">Sí</label>
+                                            <input type="radio" name="needs" value="no" class="form-radio" id="needs-no">
+                                            <label for="needs-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Siente responsivo la navegación en el software?</strong></td>
+                                        <td>
+                                            <input type="radio" name="responsive" value="si" class="form-radio" id="responsive-si">
+                                            <label for="responsive-si">Sí</label>
+                                            <input type="radio" name="responsive" value="no" class="form-radio" id="responsive-no">
+                                            <label for="responsive-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>¿Tras la última actualización ha sentido una mejora en el uso?</strong></td>
+                                        <td>
+                                            <input type="radio" name="improvement" value="si" class="form-radio" id="improvement-si">
+                                            <label for="improvement-si">Sí</label>
+                                            <input type="radio" name="improvement" value="no" class="form-radio" id="improvement-no">
+                                            <label for="improvement-no">No</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Observaciones o preguntas adicionales</strong></td>
+                                        <td><textarea class="form-textarea" placeholder="Escriba aquí cualquier observación adicional"></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Referencias -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📚 Referencias</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="reference-item">
+                            <div class="reference-icon">🌐</div>
+                            <div class="reference-content">
+                                <h4>Instrumentos para Recopilar Información - QuestionPro</h4>
+                                <p>https://www.questionpro.com/blog/es/instrumentos-para-recopilar-informacion/</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        
+        <!-- PDF Viewer Section -->
+    <section class="pdf-viewer-section" id="manual">
+        <div class="pdf-viewer-container">
+            <div class="section-header">
+                <h2 class="section-title">Manual del Proyecto</h2>
+                <p class="section-subtitle">Documentación completa del proyecto de desarrollo de software</p>
+            </div>
+            <div class="pdf-viewer-wrapper">
+                <div class="pdf-viewer-header">
+                </div>
+                <div class="pdf-viewer-content">
+                    <iframe src="4. Recolección de información.pdf#page=1" width="100%" height="600px" frameborder="0" title="4. Recoleccion de informacion PDF"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div class="page-navigation">
+            <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html" class="nav-button prev-button" >
+                <span class="nav-icon">←</span>
+                <span class="nav-text">3. Ingeniería de requisitos</span>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Inicio</span>
+            </a>
+            <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html" class="nav-button next-button" >
+                <span class="nav-text">5. Formulación de Proyecto</span>
+                <span class="nav-icon">→</span>
+            </a>
+        </div>
+            
+
+        <footer class="footer-section" id="contacto">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-icon">🎓</span>
+                            <span class="logo-text">Proyecto SENA</span>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column sitemap-column">
+                        <button class="sitemap-button" onclick="openSitemapModal()">
+                            <span class="sitemap-icon">🗺️</span>
+                            <span>Mapa del Sitio</span>
+                                </button>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>2025-2026 / <strong><em>Desarrollador: Lyam Acosta Forero</em></strong>. Proyecto SENA - Análisis y Desarrollo de Software</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+    <!-- Sitemap Modal -->
+    <div class="sitemap-modal" id="sitemapModal">
+        <div class="sitemap-modal-content">
+            <div class="sitemap-modal-header">
+                <h2>🗺️ Mapa del Sitio</h2>
+                <button class="sitemap-close" onclick="closeSitemapModal()">&times;</button>
+            </div>
+            <div class="sitemap-modal-body">
+                <div class="sitemap-grid">
+                    <a href="../1. Introduccion/1. Introduccion.html">1. Introducción</a>
+                    <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html">2. Procesos organizacionales</a>
+                    <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html">3. Ingeniería de requisitos</a>
+                    <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html">4. Recolección de información</a>
+                    <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html">5. Formulación de Proyecto</a>
+                    <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html">6. Formulario de recolección de información</a>
+                    <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html">7. Especificación de Requerimientos</a>
+                    <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html">8. Evaluación de requerimientos</a>
+                    <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html">9. Metodologías de desarrollo</a>
+                    <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html">10. Metodología para el proyecto</a>
+                    <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html">11. Software y servicios de internet</a>
+                    <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html">12. Mejora de productos y procesos con la incorporación de TIC</a>
+                    <a href="../13. Diagramas para la especificación y análisis de requisitos/13. Diagramas para la especificación y análisis de requisitos.html">13. Diagramas para la especificación y análisis de requisitos</a>
+                    <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html">14. Diagramas y plantillas para casos de uso del proyecto</a>
+                    <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html">15. Historias de usuario del proyecto</a>
+                    <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html">16. Modelo del dominio del Proyecto</a>
+                    <a href="../17. Validación de Documentos/17. Validación de Documentos.html">17. Validación de Documentos</a>
+                    <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html">18. Listas de chequeo para la validación de artefactos</a>
+                    <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html">19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas</a>
+                    <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html">20. Ficha técnica de los productos requeridos</a>
+                    <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html">21. Diseño de tablas comparativas sobre presupuestos de hardware y software</a>
+                    <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html">22. Propuesta técnica y económica para la implementación del proyecto</a>
+                    <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html">23. Modelos conceptual y lógico para el proyecto</a>
+                    <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html">24. Informe de entregables para el proyecto de desarrollo de software</a>
+                    <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html">25. Diagrama de Clases del proyecto de software</a>
+                    <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html">26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado</a>
+                    <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html">27. Arquitectura de Software</a>
+                    <a href="../28. Validación de Documentos/28. Validación de Documentos.html">28. Validación de Documentos</a>
+                    <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html">29. Instrumentos para verificación de artefactos</a>
+                    <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html">30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</a>
+                    <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html">31. Crear un modelo de base de datos con base a los requerimientos del cliente</a>
+                    <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html">32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)</a>
+                    <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html">33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles</a>
+                    <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html">34. Generar plantillas y estilos</a>
+                    <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html">35. Configurar herramientas de versionamiento para control de código</a>
+                    <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html">36. Aplicar estándares de codificación</a>
+                    <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html">37. Codificar los módulos del software Stand-alone, web y móvil</a>
+                    <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html">38. Codificar el frontend utilizando framework</a>
+                    <a href="../39. Crear servicios web/39. Crear servicios web.html">39. Crear servicios web</a>
+                    <a href="../40. Integrar módulos/40. Integrar módulos.html">40. Integrar módulos</a>
+                    <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html">41. Incorporar tecnologías emergentes y disruptivas</a>
+                    <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html">42. Realizar plan de pruebas</a>
+                    <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html">43. Definir casos y ambiente de prueba</a>
+                    <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html">44. Documentar y realizar pruebas</a>
+                    <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html">45. Preparar la plataforma tecnológica</a>
+                    <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html">46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado</a>
+                    <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html">47. Elaborar el plan de instalación</a>
+                    <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html">48. Configurar los servicios requeridos</a>
+                    <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html">49. Configurar el software en el servidor y la base de datos</a>
+                    <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html">50. Cargar archivos en el sitio de publicación</a>
+                    <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html">51. Realizar pruebas de funcionalidad del software</a>
+                    <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html">52. Elaborar planes de mantenimiento y soporte del software</a>
+                    <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html">53. Documentar el proceso de migración y respaldo de los datos</a>
+                    <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html">54. Elaborar manuales de instalación, técnico y de usuario</a>
+                    <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html">55. Elaborar el manual de usuario</a>
+                    <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html">56. Capacitar a los usuarios y realizar pruebas de aceptación</a>
+                    <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html">57. Elaborar acta de entrega</a>
+                    <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html">58. Aplicar los instrumentos de calidad de software</a>
+                    <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html">59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas</a>
+                    <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html">60. Ajustar procesos del desarrollo de software</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

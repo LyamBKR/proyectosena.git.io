@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Diagramas para la especificación y análisis de requisitos - Proyecto SENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    
+</head>
+<body>
+    <div class="page-container">
+        <!-- Epic Header Section -->
+        <div class="epic-header">
+            <div class="hero-badge">
+                <span class="badge-icon">📊</span>
+                <span class="badge-text">Diagramas</span>
+            </div>
+            <h1 class="epic-title">13. Diagramas para la especificación y análisis de requisitos</h1>
+            <p class="epic-subtitle">Proyecto SENA - Análisis y desarrollo de software | <strong>Desarrollador: Lyam Acosta Forero</strong></p>
+            <a href="#manual" class="pdf-viewer-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                VER PDF
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">Proyecto SENA</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#proyecto" class="nav-link dropdown-toggle" onclick="toggleProyectoDropdown()">Proyecto</a>
+                        <div class="dropdown-menu modules-dropdown">
+                            <a href="../1. Introduccion/1. Introduccion.html" class="dropdown-item" data-category="introduccion">
+                                <span class="dropdown-icon">📋</span>
+                                1. Introducción
+                            </a>
+                            <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html" class="dropdown-item" data-category="procesos">
+                                <span class="dropdown-icon">⚙️</span>
+                                2. Procesos organizacionales
+                            </a>
+                            <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html" class="dropdown-item" data-category="requisitos">
+                                <span class="dropdown-icon">📝</span>
+                                3. Ingeniería de requisitos
+                            </a>
+                            <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html" class="dropdown-item" data-category="informacion">
+                                <span class="dropdown-icon">📊</span>
+                                4. Recolección de información
+                            </a>
+                            <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html" class="dropdown-item" data-category="formulacion">
+                                <span class="dropdown-icon">📋</span>
+                                5. Formulación de Proyecto
+                            </a>
+                            <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🛠️</span>
+                                6. Formulario de recolección de información
+                            </a>
+                            <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                7. Especificación de Requerimientos
+                            </a>
+                            <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">✅</span>
+                                8. Evaluación de requerimientos
+                            </a>
+                            <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🔄</span>
+                                9. Metodologías de desarrollo
+                            </a>
+                            <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                10. Metodología para el proyecto
+                            </a>
+                            <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">🌐</span>
+                                11. Software y servicios de internet
+                            </a>
+                            <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">💻</span>
+                                12. Mejora de productos y procesos con la incorporación de TIC
+                            </a>
+                            <a href="../13. Diagramas para la especificación y análisis de requisitos/13. Diagramas para la especificación y análisis de requisitos.html" class="dropdown-item active" data-category="diagramas">
+                                <span class="dropdown-icon">📊</span>
+                                13. Diagramas para la especificación y análisis de requisitos
+                            </a>
+                            <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">📈</span>
+                                14. Diagramas y plantillas para casos de uso del proyecto
+                            </a>
+                            <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">👥</span>
+                                15. Historias de usuario del proyecto
+                            </a>
+                            <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">🏗️</span>
+                                16. Modelo del dominio del Proyecto
+                            </a>
+                            <a href="../17. Validación de Documentos/17. Validación de Documentos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">✅</span>
+                                17. Validación de Documentos
+                            </a>
+                            <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">📝</span>
+                                18. Listas de chequeo para la validación de artefactos
+                            </a>
+                            <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">💰</span>
+                                19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas
+                            </a>
+                            <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📋</span>
+                                20. Ficha técnica de los productos requeridos
+                            </a>
+                            <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📊</span>
+                                21. Diseño de tablas comparativas sobre presupuestos de hardware y software
+                            </a>
+                            <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📈</span>
+                                22. Propuesta técnica y económica para la implementación del proyecto
+                            </a>
+                            <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                23. Modelos conceptual y lógico para el proyecto
+                            </a>
+                            <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">📄</span>
+                                24. Informe de entregables para el proyecto de desarrollo de software
+                            </a>
+                            <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🔗</span>
+                                25. Diagrama de Clases del proyecto de software
+                            </a>
+                            <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏛️</span>
+                                26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado
+                            </a>
+                            <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                27. Arquitectura de Software
+                            </a>
+                            <a href="../28. Validación de Documentos/28. Validación de Documentos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">✅</span>
+                                28. Validación de Documentos
+                            </a>
+                            <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                29. Instrumentos para verificación de artefactos
+                            </a>
+                            <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad
+                            </a>
+                            <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🗄️</span>
+                                31. Crear un modelo de base de datos con base a los requerimientos del cliente
+                            </a>
+                            <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💾</span>
+                                32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)
+                            </a>
+                            <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🖥️</span>
+                                33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles
+                            </a>
+                            <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                34. Generar plantillas y estilos
+                            </a>
+                            <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                35. Configurar herramientas de versionamiento para control de código
+                            </a>
+                            <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💻</span>
+                                36. Aplicar estándares de codificación
+                            </a>
+                            <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">⚙️</span>
+                                37. Codificar los módulos del software Stand-alone, web y móvil
+                            </a>
+                            <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🌐</span>
+                                38. Codificar el frontend utilizando framework
+                            </a>
+                            <a href="../39. Crear servicios web/39. Crear servicios web.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔗</span>
+                                39. Crear servicios web
+                            </a>
+                            <a href="../40. Integrar módulos/40. Integrar módulos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                40. Integrar módulos
+                            </a>
+                            <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🚀</span>
+                                41. Incorporar tecnologías emergentes y disruptivas
+                            </a>
+                            <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🧪</span>
+                                42. Realizar plan de pruebas
+                            </a>
+                            <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                43. Definir casos y ambiente de prueba
+                            </a>
+                            <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📝</span>
+                                44. Documentar y realizar pruebas
+                            </a>
+                            <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🖥️</span>
+                                45. Preparar la plataforma tecnológica
+                            </a>
+                            <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">✅</span>
+                                46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado
+                            </a>
+                            <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                47. Elaborar el plan de instalación
+                            </a>
+                            <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">⚙️</span>
+                                48. Configurar los servicios requeridos
+                            </a>
+                            <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🗄️</span>
+                                49. Configurar el software en el servidor y la base de datos
+                            </a>
+                            <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📤</span>
+                                50. Cargar archivos en el sitio de publicación
+                            </a>
+                            <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🧪</span>
+                                51. Realizar pruebas de funcionalidad del software
+                            </a>
+                            <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔧</span>
+                                52. Elaborar planes de mantenimiento y soporte del software
+                            </a>
+                            <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📄</span>
+                                53. Documentar el proceso de migración y respaldo de los datos
+                            </a>
+                            <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📚</span>
+                                54. Elaborar manuales de instalación, técnico y de usuario
+                            </a>
+                            <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">👤</span>
+                                55. Elaborar el manual de usuario
+                            </a>
+                            <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🎓</span>
+                                56. Capacitar a los usuarios y realizar pruebas de aceptación
+                            </a>
+                            <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📋</span>
+                                57. Elaborar acta de entrega
+                            </a>
+                            <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">⭐</span>
+                                58. Aplicar los instrumentos de calidad de software
+                            </a>
+                            <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📊</span>
+                                59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas
+                            </a>
+                            <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔄</span>
+                                60. Ajustar procesos del desarrollo de software
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#desarrollador" class="nav-link dropdown-toggle" onclick="toggleDropdown()">Desarrollador</a>
+                        <div class="dropdown-menu">
+                            <a href="https://github.com/LyamBKR" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">🐙</span>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/lyam-acosta-forero-11aa34204/" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="../cv/cvspanish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV Español
+                            </a>
+                            <a href="../cv/cvenglish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV English
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Introducción -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📊 Diagramas para la Especificación y Análisis de Requisitos</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <p>La especificación y el análisis de requisitos para nuestro videojuego es una parte importante por ello utilizar diagramas nos ayudaría a una identificación clara de funcionalidades, actores y como interactúan entre si dentro del sistema del videojuego sirviendo de base para el diseño, la estimación y la validación del producto a desarrollar.</p>
+                                <div class="intro-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📊</div>
+                                        <div class="feature-text">Diagramas</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎯</div>
+                                        <div class="feature-text">Requisitos</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🏗️</div>
+                                        <div class="feature-text">Arquitectura</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔍</div>
+                                        <div class="feature-text">Análisis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 13.1 Tipos de diagramas -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📋 13.1 Tipos de Diagramas</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Los diagramas UML (Unified Modeling Language) son herramientas fundamentales para visualizar, especificar, construir y documentar los artefactos de un sistema de software. Nos permiten representar de manera clara y estructurada los diferentes aspectos del videojuego.</p>
+                        
+                        <div class="quote-box">
+                            <p>"Los diagramas UML proporcionan una representación visual estándar para modelar sistemas de software, facilitando la comunicación entre desarrolladores, analistas y stakeholders, y sirviendo como base sólida para el diseño, implementación y validación del producto final."</p>
+                        </div>
+                        
+                        <div class="diagrams-grid">
+                            <div class="diagram-card">
+                                <div class="diagram-icon">🏗️</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Clases</h3>
+                                    <p>Un diagrama de clases UML representa un sistema estático orientado a objetos. Define proyectos por clases, atributos y funciones; como tal, es un bloque de construcción fundamental de cualquier solución orientada a objetos. Muestra las clases de un sistema y las operaciones de cada una de ellas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-card">
+                                <div class="diagram-icon">📦</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Paquetes</h3>
+                                    <p>Los diagramas de paquetes agrupan las clases en paquetes. Muestran las distintas dependencias y relaciones entre los paquetes de un sistema.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-card">
+                                <div class="diagram-icon">🎯</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Objetos</h3>
+                                    <p>Los diagramas de objetos son similares a los diagramas de clases en el sentido de que muestran las relaciones entre los objetos de un software. La diferencia es que los diagramas de objetos utilizan ejemplos del mundo real. Los diagramas de objetos también se denominan diagramas de instancia porque muestran el aspecto del sistema en un momento determinado.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-card">
+                                <div class="diagram-icon">🧩</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Componentes</h3>
+                                    <p>Un diagrama de componentes UML ofrece a los desarrolladores una comprensión global de los objetos físicos de un sistema. Este tipo de diagrama UML muestra la relación estructural entre cada componente físico y subcomponente de un sistema de software complejo. Esto ayuda a las partes interesadas a comprender cómo se organizan y conectan los componentes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-card">
+                                <div class="diagram-icon">🔗</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Estructura Compuesta</h3>
+                                    <p>Los diagramas de estructura compuesta visualizan la estructura interna de una clase. Estos diagramas desglosan la red de clases, interfaces y componentes. Este tipo de diagrama UML también muestra cómo interactúan estos elementos entre sí y por qué son esenciales para la estructura general del software.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-card">
+                                <div class="diagram-icon">🚀</div>
+                                <div class="diagram-content">
+                                    <h3>Diagrama de Despliegue</h3>
+                                    <p>Un diagrama de despliegue muestra la relación entre los componentes de software y hardware de un sistema. Representa la disposición física de los nodos en un sistema distribuido. Estos diagramas son especialmente útiles cuando el software que se está desarrollando funcionará en varios sistemas de hardware diferentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 13.2 Diagrama -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📈 13.2 Diagrama</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="diagram-container">
+                            <div class="diagram-description">
+                                <h3>Diagrama de Clases UML para Videojuego</h3>
+                                <p>El siguiente diagrama muestra la estructura de clases y sus relaciones para nuestro sistema de videojuego, incluyendo las interfaces, clases abstractas y la clase Jugador con sus diferentes estados.</p>
+                            </div>
+                            
+                            <div class="diagram-image-container">
+                                <div class="diagram-placeholder">
+                                    <div class="diagram-icon-large">📊</div>
+                                    <h4>Diagrama de Clases UML</h4>
+                                    <p>Representación visual de la estructura del sistema de videojuego</p>
+                                    <div class="diagram-features">
+                                        <div class="feature-tag">Clases Abstractas</div>
+                                        <div class="feature-tag">Interfaces</div>
+                                        <div class="feature-tag">Relaciones</div>
+                                        <div class="feature-tag">Estados del Jugador</div>
+                                        <div class="feature-tag">Agregaciones</div>
+                                        <div class="feature-tag">Dependencias</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="diagram-explanation">
+                                <h4>Explicación del Diagrama</h4>
+                                <div class="explanation-grid">
+                                    <div class="explanation-item">
+                                        <div class="explanation-icon">🏗️</div>
+                                        <div class="explanation-content">
+                                            <h5>Clase Abstracta</h5>
+                                            <p>Define operaciones base que serán implementadas por las clases derivadas</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="explanation-item">
+                                        <div class="explanation-icon">🔌</div>
+                                        <div class="explanation-content">
+                                            <h5>Interfaces</h5>
+                                            <p>Definen contratos que deben implementar las clases, como HUD Especial y Botones</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="explanation-item">
+                                        <div class="explanation-icon">👤</div>
+                                        <div class="explanation-content">
+                                            <h5>Clase Jugador</h5>
+                                            <p>Representa los diferentes estados del jugador: Inactivo, Jugando, Pausado, Game Over</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="explanation-item">
+                                        <div class="explanation-icon">🔗</div>
+                                        <div class="explanation-content">
+                                            <h5>Relaciones</h5>
+                                            <p>Muestra asociaciones, generalizaciones, agregaciones y dependencias entre componentes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tabla de Relaciones -->
+                        <div class="relationships-section">
+                            <h4>Relaciones del Sistema</h4>
+                            <div class="relationships-table-container">
+                                <table class="relationships-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Relación</th>
+                                            <th>Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="relation-symbol">↔️</span> Personaje ↔ Jugador</td>
+                                            <td>Asociación bidireccional que conecta el personaje con el jugador</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="relation-symbol">→</span> Personaje → Enemigos</td>
+                                            <td>El personaje puede interactuar con enemigos</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="relation-symbol">→</span> Personaje → Recompensa</td>
+                                            <td>El personaje puede obtener recompensas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="relation-symbol">↔️</span> Jugador ↔ Enemigos</td>
+                                            <td>Interacción bidireccional entre jugador y enemigos</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="relation-symbol">↔️</span> Jugador ↔ Recompensa</td>
+                                            <td>El jugador puede recibir recompensas</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="relation-symbol">👤</span> Actor → Jugador</td>
+                                            <td>El actor (usuario) interactúa con el jugador</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Referencias -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📚 Referencias</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="reference-item">
+                            <div class="reference-icon">🌐</div>
+                            <div class="reference-content">
+                                <h4>Miro - Diagramas UML</h4>
+                                <p>https://miro.com/es/diagrama/que-es-diagrama-uml/#diagramas-estructurales</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        
+        <!-- PDF Viewer Section -->
+    <section class="pdf-viewer-section" id="manual">
+        <div class="pdf-viewer-container">
+            <div class="section-header">
+                <h2 class="section-title">Manual del Proyecto</h2>
+                <p class="section-subtitle">Documentación completa del proyecto de desarrollo de software</p>
+            </div>
+            <div class="pdf-viewer-wrapper">
+                <div class="pdf-viewer-header">
+                </div>
+                <div class="pdf-viewer-content">
+                    <iframe src="13. Diagramas para la especificación y análisis de requisitos.pdf#page=1" width="100%" height="600px" frameborder="0" title="Proyecto Software PDF"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div class="page-navigation"><a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html" class="nav-button prev-button"><span class="nav-icon">←</span><span class="nav-text">12. Mejora de productos y procesos con la incor...</span></a>
+<a href="../index.html" class="nav-button home-button"><span class="nav-icon">🏠</span><span class="nav-text">Inicio</span></a>
+<a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html" class="nav-button next-button"><span class="nav-text">14. Diagramas y plantillas para casos de uso de...</span><span class="nav-icon">→</span></a>
+</div>
+            
+
+        <footer class="footer-section" id="contacto">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-icon">🎓</span>
+                            <span class="logo-text">Proyecto SENA</span>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column sitemap-column">
+                        <button class="sitemap-button" onclick="openSitemapModal()">
+                            <span class="sitemap-icon">🗺️</span>
+                            <span>Mapa del Sitio</span>
+                        </button>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>2025-2026 / <strong><em>Desarrollador: Lyam Acosta Forero</em></strong>. Proyecto SENA - Análisis y Desarrollo de Software</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+    <!-- Sitemap Modal -->
+    <div class="sitemap-modal" id="sitemapModal">
+        <div class="sitemap-modal-content">
+            <div class="sitemap-modal-header">
+                <h2>🗺️ Mapa del Sitio</h2>
+                <button class="sitemap-close" onclick="closeSitemapModal()">&times;</button>
+            </div>
+            <div class="sitemap-modal-body">
+                <div class="sitemap-grid">
+                    <a href="../1. Introduccion/1. Introduccion.html">1. Introducción</a>
+                    <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html">2. Procesos organizacionales</a>
+                    <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html">3. Ingeniería de requisitos</a>
+                    <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html">4. Recolección de información</a>
+                    <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html">5. Formulación de Proyecto</a>
+                    <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html">6. Formulario de recolección de información</a>
+                    <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html">7. Especificación de Requerimientos</a>
+                    <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html">8. Evaluación de requerimientos</a>
+                    <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html">9. Metodologías de desarrollo</a>
+                    <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html">10. Metodología para el proyecto</a>
+                    <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html">11. Software y servicios de internet</a>
+                    <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html">12. Mejora de productos y procesos con la incorporación de TIC</a>
+                    <a href="../13. Diagramas para la especificación y análisis de requisitos/13. Diagramas para la especificación y análisis de requisitos.html">13. Diagramas para la especificación y análisis de requisitos</a>
+                    <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html">14. Diagramas y plantillas para casos de uso del proyecto</a>
+                    <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html">15. Historias de usuario del proyecto</a>
+                    <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html">16. Modelo del dominio del Proyecto</a>
+                    <a href="../17. Validación de Documentos/17. Validación de Documentos.html">17. Validación de Documentos</a>
+                    <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html">18. Listas de chequeo para la validación de artefactos</a>
+                    <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html">19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas</a>
+                    <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html">20. Ficha técnica de los productos requeridos</a>
+                    <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html">21. Diseño de tablas comparativas sobre presupuestos de hardware y software</a>
+                    <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html">22. Propuesta técnica y económica para la implementación del proyecto</a>
+                    <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html">23. Modelos conceptual y lógico para el proyecto</a>
+                    <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html">24. Informe de entregables para el proyecto de desarrollo de software</a>
+                    <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html">25. Diagrama de Clases del proyecto de software</a>
+                    <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html">26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado</a>
+                    <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html">27. Arquitectura de Software</a>
+                    <a href="../28. Validación de Documentos/28. Validación de Documentos.html">28. Validación de Documentos</a>
+                    <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html">29. Instrumentos para verificación de artefactos</a>
+                    <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html">30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</a>
+                    <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html">31. Crear un modelo de base de datos con base a los requerimientos del cliente</a>
+                    <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html">32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)</a>
+                    <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html">33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles</a>
+                    <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html">34. Generar plantillas y estilos</a>
+                    <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html">35. Configurar herramientas de versionamiento para control de código</a>
+                    <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html">36. Aplicar estándares de codificación</a>
+                    <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html">37. Codificar los módulos del software Stand-alone, web y móvil</a>
+                    <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html">38. Codificar el frontend utilizando framework</a>
+                    <a href="../39. Crear servicios web/39. Crear servicios web.html">39. Crear servicios web</a>
+                    <a href="../40. Integrar módulos/40. Integrar módulos.html">40. Integrar módulos</a>
+                    <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html">41. Incorporar tecnologías emergentes y disruptivas</a>
+                    <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html">42. Realizar plan de pruebas</a>
+                    <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html">43. Definir casos y ambiente de prueba</a>
+                    <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html">44. Documentar y realizar pruebas</a>
+                    <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html">45. Preparar la plataforma tecnológica</a>
+                    <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html">46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado</a>
+                    <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html">47. Elaborar el plan de instalación</a>
+                    <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html">48. Configurar los servicios requeridos</a>
+                    <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html">49. Configurar el software en el servidor y la base de datos</a>
+                    <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html">50. Cargar archivos en el sitio de publicación</a>
+                    <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html">51. Realizar pruebas de funcionalidad del software</a>
+                    <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html">52. Elaborar planes de mantenimiento y soporte del software</a>
+                    <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html">53. Documentar el proceso de migración y respaldo de los datos</a>
+                    <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html">54. Elaborar manuales de instalación, técnico y de usuario</a>
+                    <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html">55. Elaborar el manual de usuario</a>
+                    <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html">56. Capacitar a los usuarios y realizar pruebas de aceptación</a>
+                    <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html">57. Elaborar acta de entrega</a>
+                    <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html">58. Aplicar los instrumentos de calidad de software</a>
+                    <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html">59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas</a>
+                    <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html">60. Ajustar procesos del desarrollo de software</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29. Instrumentos para verificación de artefactos - Proyecto SENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    
+</head>
+<body>
+    <div class="page-container">
+        <!-- Epic Header Section -->
+        <div class="epic-header">
+            <div class="hero-badge">
+                <span class="badge-icon">🔧</span>
+                <span class="badge-text">Verificación</span>
+            </div>
+            <h1 class="epic-title">29. Instrumentos para verificación de artefactos</h1>
+            <p class="epic-subtitle">Proyecto SENA - Análisis y desarrollo de software | <strong>Desarrollador: Lyam Acosta Forero</strong></p>
+            <a href="#manual" class="pdf-viewer-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                VER PDF
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-icon">🎓</span>
+                    <span class="logo-text">Proyecto SENA</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#proyecto" class="nav-link dropdown-toggle" onclick="toggleProyectoDropdown()">Proyecto</a>
+                        <div class="dropdown-menu modules-dropdown">
+                            <a href="../1. Introduccion/1. Introduccion.html" class="dropdown-item" data-category="introduccion">
+                                <span class="dropdown-icon">📋</span>
+                                1. Introducción
+                            </a>
+                            <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html" class="dropdown-item" data-category="procesos">
+                                <span class="dropdown-icon">⚙️</span>
+                                2. Procesos organizacionales
+                            </a>
+                            <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html" class="dropdown-item" data-category="requisitos">
+                                <span class="dropdown-icon">📝</span>
+                                3. Ingeniería de requisitos
+                            </a>
+                            <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html" class="dropdown-item" data-category="informacion">
+                                <span class="dropdown-icon">📊</span>
+                                4. Recolección de información
+                            </a>
+                            <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html" class="dropdown-item" data-category="formulacion">
+                                <span class="dropdown-icon">📋</span>
+                                5. Formulación de Proyecto
+                            </a>
+                            <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🛠️</span>
+                                6. Formulario de recolección de información
+                            </a>
+                            <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                7. Especificación de Requerimientos
+                            </a>
+                            <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">✅</span>
+                                8. Evaluación de requerimientos
+                            </a>
+                            <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">🔄</span>
+                                9. Metodologías de desarrollo
+                            </a>
+                            <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html" class="dropdown-item" data-category="metodologias">
+                                <span class="dropdown-icon">📋</span>
+                                10. Metodología para el proyecto
+                            </a>
+                            <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">🌐</span>
+                                11. Software y servicios de internet
+                            </a>
+                            <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. mejoradeproductosyprocesosconlaincorporaciónndetic.html" class="dropdown-item" data-category="tecnologia">
+                                <span class="dropdown-icon">💻</span>
+                                12. Mejora de productos y procesos con la incorporación de TIC
+                            </a>
+                            <a href="../13. Diagramas para la especificación y análisis de requisitos/13. diagramasparalaespecificacionnyanlisisderequisitos.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">📊</span>
+                                13. Diagramas para la especificación y análisis de requisitos
+                            </a>
+                            <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">📈</span>
+                                14. Diagramas y plantillas para casos de uso del proyecto
+                            </a>
+                            <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html" class="dropdown-item" data-category="diagramas">
+                                <span class="dropdown-icon">👥</span>
+                                15. Historias de usuario del proyecto
+                            </a>
+                            <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">🏗️</span>
+                                16. Modelo del dominio del Proyecto
+                            </a>
+                            <a href="../17. Validación de Documentos/17. Validación de Documentos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">✅</span>
+                                17. Validación de Documentos
+                            </a>
+                            <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html" class="dropdown-item" data-category="modelado">
+                                <span class="dropdown-icon">📝</span>
+                                18. Listas de chequeo para la validación de artefactos
+                            </a>
+                            <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">💰</span>
+                                19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas
+                            </a>
+                            <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📋</span>
+                                20. Ficha técnica de los productos requeridos
+                            </a>
+                            <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📊</span>
+                                21. Diseño de tablas comparativas sobre presupuestos de hardware y software
+                            </a>
+                            <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html" class="dropdown-item" data-category="economia">
+                                <span class="dropdown-icon">📈</span>
+                                22. Propuesta técnica y económica para la implementación del proyecto
+                            </a>
+                            <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                23. Modelos conceptual y lógico para el proyecto
+                            </a>
+                            <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">📄</span>
+                                24. Informe de entregables para el proyecto de desarrollo de software
+                            </a>
+                            <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🔗</span>
+                                25. Diagrama de Clases del proyecto de software
+                            </a>
+                            <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏛️</span>
+                                26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado
+                            </a>
+                            <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html" class="dropdown-item" data-category="arquitectura">
+                                <span class="dropdown-icon">🏗️</span>
+                                27. Arquitectura de Software
+                            </a>
+                            <a href="../28. Validación de Documentos/28. Validación de Documentos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">✅</span>
+                                28. Validación de Documentos
+                            </a>
+                            <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html" class="dropdown-item active" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                29. Instrumentos para verificación de artefactos
+                            </a>
+                            <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad
+                            </a>
+                            <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🗄️</span>
+                                31. Crear un modelo de base de datos con base a los requerimientos del cliente
+                            </a>
+                            <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💾</span>
+                                32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)
+                            </a>
+                            <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🖥️</span>
+                                33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles
+                            </a>
+                            <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🎨</span>
+                                34. Generar plantillas y estilos
+                            </a>
+                            <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                35. Configurar herramientas de versionamiento para control de código
+                            </a>
+                            <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">💻</span>
+                                36. Aplicar estándares de codificación
+                            </a>
+                            <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">⚙️</span>
+                                37. Codificar los módulos del software Stand-alone, web y móvil
+                            </a>
+                            <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🌐</span>
+                                38. Codificar el frontend utilizando framework
+                            </a>
+                            <a href="../39. Crear servicios web/39. Crear servicios web.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔗</span>
+                                39. Crear servicios web
+                            </a>
+                            <a href="../40. Integrar módulos/40. Integrar módulos.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🔧</span>
+                                40. Integrar módulos
+                            </a>
+                            <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html" class="dropdown-item" data-category="desarrollo">
+                                <span class="dropdown-icon">🚀</span>
+                                41. Incorporar tecnologías emergentes y disruptivas
+                            </a>
+                            <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🧪</span>
+                                42. Realizar plan de pruebas
+                            </a>
+                            <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                43. Definir casos y ambiente de prueba
+                            </a>
+                            <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📝</span>
+                                44. Documentar y realizar pruebas
+                            </a>
+                            <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🖥️</span>
+                                45. Preparar la plataforma tecnológica
+                            </a>
+                            <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">✅</span>
+                                46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado
+                            </a>
+                            <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📋</span>
+                                47. Elaborar el plan de instalación
+                            </a>
+                            <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">⚙️</span>
+                                48. Configurar los servicios requeridos
+                            </a>
+                            <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">🗄️</span>
+                                49. Configurar el software en el servidor y la base de datos
+                            </a>
+                            <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html" class="dropdown-item" data-category="testing">
+                                <span class="dropdown-icon">📤</span>
+                                50. Cargar archivos en el sitio de publicación
+                            </a>
+                            <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🧪</span>
+                                51. Realizar pruebas de funcionalidad del software
+                            </a>
+                            <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔧</span>
+                                52. Elaborar planes de mantenimiento y soporte del software
+                            </a>
+                            <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📄</span>
+                                53. Documentar el proceso de migración y respaldo de los datos
+                            </a>
+                            <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📚</span>
+                                54. Elaborar manuales de instalación, técnico y de usuario
+                            </a>
+                            <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">👤</span>
+                                55. Elaborar el manual de usuario
+                            </a>
+                            <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🎓</span>
+                                56. Capacitar a los usuarios y realizar pruebas de aceptación
+                            </a>
+                            <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📋</span>
+                                57. Elaborar acta de entrega
+                            </a>
+                            <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">⭐</span>
+                                58. Aplicar los instrumentos de calidad de software
+                            </a>
+                            <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">📊</span>
+                                59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas
+                            </a>
+                            <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html" class="dropdown-item" data-category="entrega">
+                                <span class="dropdown-icon">🔄</span>
+                                60. Ajustar procesos del desarrollo de software
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                    <div class="nav-dropdown">
+                        <a href="#desarrollador" class="nav-link dropdown-toggle" onclick="toggleDropdown()">Desarrollador</a>
+                        <div class="dropdown-menu">
+                            <a href="https://github.com/LyamBKR" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">🐙</span>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/lyam-acosta-forero-11aa34204/" class="dropdown-item" target="_blank" rel="noopener">
+                                <span class="dropdown-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="../cv/cvspanish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV Español
+                            </a>
+                            <a href="../cv/cvenglish.html" class="dropdown-item">
+                                <span class="dropdown-icon">👨‍💻</span>
+                                CV English
+                            </a>
+                        </div>
+                    </div>
+                    <span class="nav-separator">|</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-container">
+                <!-- Introducción -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🔧 Verificación y Validación de Artefactos de Software</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <h3>Instrumentos de Verificación de Artefactos</h3>
+                    <p>Los instrumentos de verificación de artefactos son herramientas fundamentales para garantizar la calidad, consistencia y cumplimiento de los estándares en el desarrollo de software. Estos instrumentos nos permiten validar que cada componente del sistema cumple con los requisitos establecidos.</p>
+                                <div class="intro-features">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">✅</div>
+                            <div class="feature-text">Validación de calidad</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📋</div>
+                            <div class="feature-text">Listas de verificación</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔍</div>
+                                        <div class="feature-text">Inspección de código</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📊</div>
+                                        <div class="feature-text">Métricas de calidad</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tipos de Instrumentos -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🛠️ Tipos de Instrumentos de Verificación</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="processes-grid">
+                            <div class="process-card">
+                                <div class="process-icon">📝</div>
+                                <div class="process-content">
+                                    <h3>Listas de Verificación</h3>
+                                    <p>Herramientas estructuradas que permiten verificar sistemáticamente el cumplimiento de estándares y requisitos.</p>
+                                    <div class="process-details">
+                                        <p>Incluyen criterios específicos para validar documentación, código, diseño y funcionalidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">🔍</div>
+                                <div class="process-content">
+                                    <h3>Inspecciones de Código</h3>
+                                    <p>Revisión detallada del código fuente para identificar problemas de calidad, mantenibilidad y cumplimiento de estándares.</p>
+                                    <div class="process-details">
+                                        <p>Se enfocan en la detección temprana de defectos y la mejora de la calidad del código.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">📊</div>
+                                <div class="process-content">
+                                    <h3>Métricas de Calidad</h3>
+                                    <p>Mediciones cuantitativas que evalúan aspectos como complejidad, mantenibilidad, cobertura de pruebas y rendimiento.</p>
+                                    <div class="process-details">
+                                        <p>Proporcionan datos objetivos para la toma de decisiones sobre la calidad del software.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">🧪</div>
+                                <div class="process-content">
+                                    <h3>Pruebas Automatizadas</h3>
+                                    <p>Herramientas que ejecutan pruebas de manera automática para verificar la funcionalidad y el rendimiento del software.</p>
+                                    <div class="process-details">
+                                        <p>Permiten la ejecución repetitiva y consistente de pruebas en diferentes entornos.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">📋</div>
+                                <div class="process-content">
+                                    <h3>Revisiones de Documentación</h3>
+                                    <p>Verificación de que la documentación técnica cumple con los estándares establecidos y es completa.</p>
+                                    <div class="process-details">
+                                        <p>Incluyen manuales de usuario, documentación técnica y especificaciones de diseño.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">🔧</div>
+                                <div class="process-content">
+                                    <h3>Herramientas de Análisis Estático</h3>
+                                    <p>Software especializado que analiza el código sin ejecutarlo para detectar problemas potenciales.</p>
+                                    <div class="process-details">
+                                        <p>Identifican vulnerabilidades de seguridad, problemas de rendimiento y violaciones de estándares de codificación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proceso de Verificación -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🔄 Proceso de Verificación de Artefactos</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="phases-grid">
+                            <div class="phase-card">
+                                <div class="phase-icon">📋</div>
+                                <div class="phase-content">
+                                    <h3>Planificación</h3>
+                                    <p>Definición de los criterios de verificación, selección de instrumentos apropiados y establecimiento del cronograma.</p>
+                                    <div class="phase-activities">
+                                        <div class="activity-item">Identificación de artefactos a verificar</div>
+                                        <div class="activity-item">Selección de instrumentos de verificación</div>
+                                        <div class="activity-item">Definición de criterios de aceptación</div>
+                                        <div class="activity-item">Asignación de responsables</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">🔍</div>
+                                <div class="phase-content">
+                                    <h3>Ejecución</h3>
+                                    <p>Aplicación de los instrumentos de verificación seleccionados para evaluar los artefactos del software.</p>
+                                    <div class="phase-activities">
+                                        <div class="activity-item">Aplicación de listas de verificación</div>
+                                        <div class="activity-item">Ejecución de inspecciones de código</div>
+                                        <div class="activity-item">Recolección de métricas de calidad</div>
+                                        <div class="activity-item">Documentación de hallazgos</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">📊</div>
+                                <div class="phase-content">
+                                    <h3>Análisis</h3>
+                                    <p>Evaluación de los resultados obtenidos y identificación de áreas que requieren mejoras o correcciones.</p>
+                                    <div class="phase-activities">
+                                <div class="activity-item">Interpretación de resultados</div>
+                                <div class="activity-item">Priorización de problemas encontrados</div>
+                                <div class="activity-item">Identificación de tendencias</div>
+                                        <div class="activity-item">Generación de reportes</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                        <div class="phase-icon">🔧</div>
+                                <div class="phase-content">
+                            <h3>Mejora Continua</h3>
+                            <p>Implementación de acciones correctivas y seguimiento de las mejoras aplicadas.</p>
+                                    <div class="phase-activities">
+                                <div class="activity-item">Corrección de defectos identificados</div>
+                                <div class="activity-item">Actualización de procesos</div>
+                                <div class="activity-item">Documentación de lecciones aprendidas</div>
+                                <div class="activity-item">Monitoreo de métricas de calidad</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Herramientas Populares -->
+                <section class="content-section">
+                <div class="section-header">
+                <h2 class="section-title">🔨 Herramientas Populares de Verificación</h2>
+                    </div>
+                <div class="section-content">
+                    <div class="processes-grid">
+                        <div class="process-card">
+                            <div class="process-icon">🔍</div>
+                            <div class="process-content">
+                                <h3>SonarQube</h3>
+                                <p>Análisis estático de código para detectar bugs, vulnerabilidades y código duplicado.</p>
+                            </div>
+                            </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">🧪</div>
+                            <div class="process-content">
+                                <h3>Jest</h3>
+                                <p>Framework de testing para JavaScript con cobertura de código integrada.</p>
+                                </div>
+                            </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">🔧</div>
+                            <div class="process-content">
+                                <h3>ESLint</h3>
+                                <p>Herramienta de análisis estático para identificar problemas en código JavaScript.</p>
+                                </div>
+                            </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">📊</div>
+                            <div class="process-content">
+                                <h3>CodeClimate</h3>
+                                <p>Plataforma de análisis de calidad de código automatizado.</p>
+                                </div>
+                            </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">🔐</div>
+                            <div class="process-content">
+                                <h3>Snyk</h3>
+                                <p>Detección y corrección de vulnerabilidades de seguridad en código y dependencias.</p>
+                                </div>
+                            </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">⚡</div>
+                            <div class="process-content">
+                                <h3>Prettier</h3>
+                                <p>Formateador de código para mantener consistencia en el estilo.</p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- Métricas Clave -->
+                <section class="content-section">
+                <div class="section-header">
+                <h2 class="section-title">📈 Métricas Clave de Verificación</h2>
+                </div>
+                <div class="section-content">
+                <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                            <th>Métrica</th>
+                                        <th>Descripción</th>
+                            <th>Objetivo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                            <td>Cobertura de Código</td>
+                            <td>Porcentaje de código ejecutado por las pruebas</td>
+                            <td>Mínimo 80%</td>
+                                    </tr>
+                                    <tr>
+                            <td>Complejidad Ciclomática</td>
+                            <td>Medida de la complejidad del código</td>
+                            <td>Menor a 10 por método</td>
+                                    </tr>
+                                    <tr>
+                            <td>Deuda Técnica</td>
+                            <td>Costo de refactorizar código problemático</td>
+                            <td>Minimizar acumulación</td>
+                                    </tr>
+                                    <tr>
+                            <td>Densidad de Defectos</td>
+                            <td>Número de defectos por líneas de código</td>
+                            <td>Menor a 0.5 por 1000 LOC</td>
+                                    </tr>
+                                    <tr>
+                            <td>Mantenibilidad</td>
+                            <td>Facilidad para mantener y modificar el código</td>
+                            <td>Índice mayor a 70</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                </div>
+                </section>
+
+            <!-- Contenido agregado 29.x -->
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title">🔧 29. Instrumentos para verificación de artefactos</h2>
+                    </div>
+                    <div class="section-content">
+                    <div class="intro-highlight">
+                        <div class="intro-content">
+                            <h3>Verificación de Artefactos del Videojuego</h3>
+                    <p>A continuación, revisaremos más a fondo la verificación de los artefactos de nuestro videojuego. Para ello crearemos un instrumento para evaluar y controlar la calidad del proyecto, garantizando que los artefactos cumplan los estándares y requisitos definidos.</p>
+                            <div class="quote-highlight" style="margin-top: 1.5rem; padding: 1rem; background: rgba(0, 120, 242, 0.1); border-left: 4px solid var(--primary-color); border-radius: var(--border-radius-md);">
+                                <p style="margin: 0; font-style: italic;">"Los instrumentos de verificación son formatos de control elaborados para registrar mediciones o el cumplimiento total o parcial de tareas, acciones, funciones o el desempeño de actividades particulares en sistemas, procesos o procedimientos."</p>
+                                <p style="margin: 0.5rem 0 0 0; font-style: italic; font-size: 0.9rem;">(Romero Alvarado, 2018). Estos formatos son herramientas necesarias para garantizar la calidad de los productos ya sea por medición, verificación o control.</p>
+                            </div>
+                    <p style="margin-top: 1rem;">Además, se incluyen actividades de riesgo, pruebas de seguridad, análisis de código estático y cobertura, y tareas específicas para sistemas críticos (p. ej., ISO 26262).</p>
+                        </div>
+                    </div>
+
+                    <!-- Componentes del proceso -->
+                    <div class="processes-grid" style="margin-top: 2rem;">
+                        <div class="process-card">
+                            <div class="process-icon">🎯</div>
+                            <div class="process-content">
+                                <h3>Definición de objetivos</h3>
+                                <p>Clarificar objetivos específicos de la verificación, qué aspectos se evaluarán y qué preguntas se responderán.</p>
+                            </div>
+                        </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">📋</div>
+                            <div class="process-content">
+                                <h3>Identificación de criterios</h3>
+                                <p>Definir criterios de evaluación (precisión, confiabilidad, validez, consistencia).</p>
+                            </div>
+                        </div>
+
+                        <div class="process-card">
+                            <div class="process-icon">🛠️</div>
+                            <div class="process-content">
+                                <h3>Selección de instrumentos</h3>
+                                <p>Elegir herramientas apropiadas (cuestionarios, escalas, pruebas, observaciones).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tipos a considerar -->
+                    <div class="phases-grid" style="margin-top: 2rem;">
+                        <div class="phase-card">
+                            <div class="phase-icon">🔍</div>
+                            <div class="phase-content">
+                                <h3>Herramienta de análisis estático</h3>
+                            </div>
+                        </div>
+
+                        <div class="phase-card">
+                            <div class="phase-icon">🧪</div>
+                            <div class="phase-content">
+                                <h3>Herramienta de prueba unitaria</h3>
+                            </div>
+                        </div>
+
+                        <div class="phase-card">
+                            <div class="phase-icon">⚙️</div>
+                            <div class="phase-content">
+                                <h3>Metodología de implementación</h3>
+                            </div>
+                        </div>
+
+                        <div class="phase-card">
+                            <div class="phase-icon">✅</div>
+                            <div class="phase-content">
+                                <h3>Consideraciones de calidad</h3>
+                            </div>
+                        </div>
+
+                        <div class="phase-card">
+                            <div class="phase-icon">🔧</div>
+                            <div class="phase-content">
+                                <h3>Técnicas de verificación aplicada</h3>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">📝 29.1 Ejemplo de Instrumento</h2>
+                    </div>
+                    <div class="section-content">
+                    <p>Ejemplo de instrumento de verificación (formato de control):</p>
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple (Sí/No)</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Portada y datos del documento</td>
+                                        <td>¿El documento tiene portada completa con título, fecha y autor?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Introducción</td>
+                                <td>¿Incluye introducción clara del propósito y alcance?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cumplimiento de requisitos</td>
+                                        <td>¿El artefacto cumple con todos los requisitos especificados?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Claridad y lenguaje</td>
+                                <td>¿Lenguaje claro y sin faltas de ortografía?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compleción de contenido</td>
+                                        <td>¿Contiene toda la información necesaria para la verificación?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formato y presentación</td>
+                                <td>¿El formato es amigable y facilita su lectura?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resultados de pruebas y validación</td>
+                                <td>¿Incluye resultados y conclusiones claras?</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title">📌 29.2 Aplicación en nuestro proyecto</h2>
+                    </div>
+                    <div class="section-content">
+                    <table class="comparison-table">
+                        <tbody>
+                            <tr><th style="width: 30%;">RS Estudios</th><td></td><th style="width: 25%;">Código</th><td>A-001</td></tr>
+                            <tr><th>Software</th><td>Videojuego “Videojuego Secreto”</td><th>Fecha</th><td>22/10/2025</td></tr>
+                            <tr><th>Responsable</th><td>Pepito Pérez</td><th>Firma de aprobación</th><td></td></tr>
+                        </tbody>
+                    </table>
+                    <table class="comparison-table" style="margin-top: 1rem;">
+                                <thead>
+                                    <tr>
+                                <th>Aspecto que verificar</th>
+                                        <th>Descripción</th>
+                                        <th>Si</th>
+                                        <th>No</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diseño visual y UI/UX</td>
+                                <td>Menús, botones y tipografía legibles y coherentes con la estética.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fluidez del Gameplay</td>
+                                <td>Animaciones sin bugs visibles ni interrupciones.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pruebas de rendimiento</td>
+                                <td>FPS estable en varias plataformas.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Audio</td>
+                                <td>Efectos, diálogos y música sincronizados y sin distorsiones.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                <td>Jugabilidad funcional</td>
+                                <td>Mecánicas (movimiento, salto, combate, ítems) funcionales.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gestión de errores</td>
+                                <td>Manejo adecuado de fallos con mensajes útiles.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                <td>Pantalla de inicio y guardado</td>
+                                <td>Nuevo juego, cargar, configuraciones y salir funcionan.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compatibilidad</td>
+                                <td>Ejecución correcta en diferentes sistemas/plataformas.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Localización y textos</td>
+                                <td>Textos traducidos correctamente y sin errores culturales.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pruebas de estrés</td>
+                                <td>Cargas extremas (enemigos, acciones inesperadas, efectos).</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                    <tr>
+                                <td>Cumplimiento de requisitos</td>
+                                <td>Implementación de funcionalidades según documento inicial.</td>
+                                <td>☐</td><td>☐</td><td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title" style="text-align: center;">💡 Recomendación para el Diseño de Instrumentos de Verificación</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="quote-highlight" style="margin: 1.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%); border-left: 4px solid #22c55e; border-radius: var(--border-radius-md);">
+                            <p style="margin: 0; font-weight: 500; font-size: 1.1rem;">Diseña los instrumentos de verificación para la verificación de artefactos</p>
+                        </div>
+                        
+                        <div class="intro-highlight" style="margin-top: 1.5rem;">
+                            <div class="intro-content">
+                                <p>Para diseñar instrumentos de verificación efectivos que permitan evaluar adecuadamente los artefactos del proyecto, es fundamental seguir una metodología estructurada que garantice la cobertura completa de todos los aspectos críticos.</p>
+                            </div>
+                        </div>
+
+                        <!-- Recomendaciones -->
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon">🎯</div>
+                                <div class="phase-content">
+                                    <h3>Identificación de Criterios</h3>
+                                    <p>Define criterios específicos y medibles para cada tipo de artefacto que se va a verificar.</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">📝</div>
+                                <div class="phase-content">
+                                    <h3>Estructura del Instrumento</h3>
+                                    <p>Diseña formatos claros con campos para observaciones, cumplimiento y áreas de mejora.</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">🔍</div>
+                                <div class="phase-content">
+                                    <h3>Cobertura Completa</h3>
+                                    <p>Asegura que todos los aspectos funcionales, técnicos y de calidad sean evaluados.</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">⚙️</div>
+                                <div class="phase-content">
+                                    <h3>Adaptabilidad</h3>
+                                    <p>Considera las particularidades de cada artefacto y su contexto de uso.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Checklist de diseño -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.05); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0;">Elementos Clave en el Diseño de Instrumentos de Verificación</h3>
+                                <ul style="margin-top: 1rem; padding-left: 1.5rem; line-height: 1.8;">
+                                    <li>Establece objetivos claros del proceso de verificación</li>
+                                    <li>Identifica los tipos de artefactos a evaluar (documentos, código, diseños, etc.)</li>
+                                    <li>Define métricas y estándares de calidad aplicables</li>
+                                    <li>Incluye escalas de evaluación (cuantitativas o cualitativas)</li>
+                                    <li>Proporciona espacios para evidencias y justificaciones</li>
+                                    <li>Considera la trazabilidad con requisitos y especificaciones iniciales</li>
+                                    <li>Facilita la generación de reportes y acciones correctivas</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="intro-highlight" style="margin-top: 2rem;">
+                            <div class="intro-content">
+                                <p>Un instrumento de verificación bien diseñado no solo identifica defectos o inconsistencias, sino que también proporciona información valiosa para la mejora continua del proceso de desarrollo y la calidad de los artefactos generados.</p>
+                            </div>
+                        </div>
+
+                        <!-- Ejemplo práctico 1: Verificación de artefactos de diseño -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(34, 197, 94, 0.03); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0; color: #16a34a; text-align: center;">📐 29.2.2. Ejemplo 1: Verificación de Artefactos de Diseño Visual</h3>
+                                <p style="margin-top: 0.5rem; color: #666;">Un instrumento de verificación para sprites y assets visuales podría incluir:</p>
+                                
+                                <table class="comparison-table" style="margin-top: 1rem;">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%; text-align: center;">Criterio</th>
+                                            <th style="text-align: center;">Estándar</th>
+                                            <th style="width: 10%; text-align: center;">Cumple</th>
+                                            <th style="width: 10%; text-align: center;">No cumple</th>
+                                            <th style="text-align: center;">Evidencia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Resolución</strong></td>
+                                            <td>Sprites en formato PNG 16x16 o múltiplos (32x32, 64x64)</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Archivo: sprite_player.png - 32x32px</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Paleta de colores</strong></td>
+                                            <td>Consistente con paleta pixel art definida (máx. 16 colores)</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Paleta_adobe.png verificada</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Transparencia</strong></td>
+                                            <td>Fondo transparente en canal alfa</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Verificado en editor</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Nomenclatura</strong></td>
+                                            <td>Convención: tipo_nombre_variante.ext</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>sprite_player_idle_1.png ✓</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Estilo artístico</strong></td>
+                                            <td>Cohérente con el documento de arte conceptual</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Revisión: 95% alineación</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Ejemplo práctico 2: Verificación de código -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.03); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0; color: #2563eb; text-align: center;">💻 29.2.3. Ejemplo 2: Verificación de Código de Mecánicas de Juego</h3>
+                                <p style="margin-top: 0.5rem; color: #666;">Instrumento para verificar la implementación correcta de mecánicas core del juego:</p>
+                                
+                                <table class="comparison-table" style="margin-top: 1rem;">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 35%; text-align: center;">Mecánica</th>
+                                            <th style="text-align: center;">Criterio de Verificación</th>
+                                            <th style="width: 5%; text-align: center;">✅</th>
+                                            <th style="width: 5%; text-align: center;">⚠️</th>
+                                            <th style="width: 5%; text-align: center;">❌</th>
+                                            <th style="text-align: center;">Tiempo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Movimiento del personaje</strong></td>
+                                            <td>Velocidad: 5 unidades/seg; Sin glitches en colisiones</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>15 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sistema de salto</strong></td>
+                                            <td>Altura: 2.5 unidades; Animación sincronizada</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>20 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Interacción con objetos</strong></td>
+                                            <td>Detección precisa; Feedback visual sonoro</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>25 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sistema de guardado</strong></td>
+                                            <td>Persistencia de datos; Autoguardado funcional</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>30 min</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Manejo de estados</strong></td>
+                                            <td>Transiciones fluidas; Sin conflictos</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>18 min</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666; font-style: italic;">Leyenda: ✅ Cumple / ⚠️ Cumple parcialmente / ❌ No cumple</p>
+                            </div>
+                        </div>
+
+                        <!-- Ejemplo práctico 3: Verificación de audio -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(168, 85, 247, 0.03); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0; color: #9333ea; text-align: center;">🎵 29.2.4. Ejemplo 3: Verificación de Artefactos de Audio</h3>
+                                <p style="margin-top: 0.5rem; color: #666;">Checklist para validar la calidad y coherencia de los recursos sonoros:</p>
+                                
+                                <div class="phases-grid" style="margin-top: 1rem; grid-template-columns: repeat(2, 1fr);">
+                                    <div style="padding: 1rem; background: rgba(168, 85, 247, 0.08); border-radius: var(--border-radius-sm); border-left: 3px solid #9333ea;">
+                                        <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">🎚️ Calidad Técnica</h4>
+                                        <ul style="margin: 0; padding-left: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+                                            <li>Formato: .ogg o .wav</li>
+                                            <li>Frecuencia: 44.1 kHz</li>
+                                            <li>Bitrate: Mínimo 128 kbps</li>
+                                            <li>Duración: acorde al evento</li>
+                                        </ul>
+                                    </div>
+                                    <div style="padding: 1rem; background: rgba(168, 85, 247, 0.08); border-radius: var(--border-radius-sm); border-left: 3px solid #9333ea;">
+                                        <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem;">🔊 Integración</h4>
+                                        <ul style="margin: 0; padding-left: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
+                                            <li>Sincronización con eventos</li>
+                                            <li>Mezcla balanceada</li>
+                                            <li>Volumen consistente</li>
+                                            <li>Sin cortes abruptos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <table class="comparison-table" style="margin-top: 1rem;">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%; text-align: center;">Archivo</th>
+                                            <th style="width: 40%; text-align: center;">Tipo</th>
+                                            <th style="width: 5%; text-align: center;">Sí</th>
+                                            <th style="width: 5%; text-align: center;">No</th>
+                                            <th style="text-align: center;">Observaciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>sound_jump.ogg</td>
+                                            <td>Efecto de salto</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>sound_coin_pickup.wav</td>
+                                            <td>Recolección de ítems</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>music_level1.ogg</td>
+                                            <td>Banda sonora nivel 1</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>sound_ui_select.ogg</td>
+                                            <td>Interfaz usuario</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Ejemplo práctico 4: Verificación de UI/UX -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(239, 68, 68, 0.03); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0; color: #dc2626; text-align: center;">🖼️ 29.2.5. Ejemplo 4: Verificación de Interfaz de Usuario</h3>
+                                <p style="margin-top: 0.5rem; color: #666;">Instrumento de verificación para elementos de UI:</p>
+                                
+                                <div style="margin-top: 1rem; display: grid; gap: 1rem;">
+                                    <div style="padding: 1rem; background: rgba(239, 68, 68, 0.08); border-radius: var(--border-radius-sm); border-left: 3px solid #dc2626;">
+                                        <div style="display: flex; align-items: start; gap: 1rem;">
+                                            <div style="font-size: 1.5rem; margin-top: 0.2rem;">📊</div>
+                                            <div style="flex: 1;">
+                                                <h4 style="margin: 0; font-size: 1rem;">HUD (Heads-Up Display)</h4>
+                                                <div style="margin-top: 0.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.9rem;">
+                                                    <div>☐ Barra de vida visible</div>
+                                                    <div>☐ Contador de puntos legible</div>
+                                                    <div>☐ Minimapa funcional</div>
+                                                    <div>☐ Indicadores de estado claros</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1rem; background: rgba(239, 68, 68, 0.08); border-radius: var(--border-radius-sm); border-left: 3px solid #dc2626;">
+                                        <div style="display: flex; align-items: start; gap: 1rem;">
+                                            <div style="font-size: 1.5rem; margin-top: 0.2rem;">⚙️</div>
+                                            <div style="flex: 1;">
+                                                <h4 style="margin: 0; font-size: 1rem;">Menú Principal</h4>
+                                                <div style="margin-top: 0.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.9rem;">
+                                                    <div>☐ Navegación intuitiva</div>
+                                                    <div>☐ Opciones de configuración</div>
+                                                    <div>☐ Botones responsivos</div>
+                                                    <div>☐ Feedback visual al interactuar</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 1rem; background: rgba(239, 68, 68, 0.08); border-radius: var(--border-radius-sm); border-left: 3px solid #dc2626;">
+                                        <div style="display: flex; align-items: start; gap: 1rem;">
+                                            <div style="font-size: 1.5rem; margin-top: 0.2rem;">📱</div>
+                                            <div style="flex: 1;">
+                                                <h4 style="margin: 0; font-size: 1rem;">Accesibilidad</h4>
+                                                <div style="margin-top: 0.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.9rem;">
+                                                    <div>☐ Tamaño de fuente mínimo 12pt</div>
+                                                    <div>☐ Contraste WCAG AA</div>
+                                                    <div>☐ Ajuste de volumen por elemento</div>
+                                                    <div>☐ Configuración de dificultad</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ejemplo práctico 5: Verificación de documentación -->
+                        <div class="phase-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(251, 146, 60, 0.03); border: 1px solid rgba(251, 146, 60, 0.2); border-radius: var(--border-radius-md);">
+                            <div class="phase-content">
+                                <h3 style="margin-top: 0; color: #ea580c; text-align: center;">📚 29.2.6. Ejemplo 5: Verificación de Documentación del Proyecto</h3>
+                                <p style="margin-top: 0.5rem; color: #666;">Instrumento para validar que los documentos cumplan con los estándares del proyecto SENA:</p>
+                                
+                                <table class="comparison-table" style="margin-top: 1rem;">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%; text-align: center;">Artefacto</th>
+                                            <th style="width: 5%; text-align: center;">Cumple</th>
+                                            <th style="width: 5%; text-align: center;">Parcial</th>
+                                            <th style="width: 5%; text-align: center;">No cumple</th>
+                                            <th style="width: 13%; text-align: center;">Autor</th>
+                                            <th style="text-align: center;">Última revisión</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Especificación de Requerimientos</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Lyam Acosta</td>
+                                            <td>15/10/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diseño de Arquitectura</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Lyam Acosta</td>
+                                            <td>20/10/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Diagrama de Clases</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Lyam Acosta</td>
+                                            <td>22/10/2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manual de Usuario</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td style="text-align: center;">☐</td>
+                                            <td>Lyam Acosta</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div style="margin-top: 1rem; padding: 1rem; background: rgba(251, 146, 60, 0.1); border-radius: var(--border-radius-sm);">
+                                    <h4 style="margin: 0 0 0.5rem 0; font-size: 0.95rem;">Criterios de evaluación de documentos:</h4>
+                                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.9rem;">
+                                        <div>✓ Portada con datos completos</div>
+                                        <div>✓ Índice actualizado</div>
+                                        <div>✓ Numeración de páginas</div>
+                                        <div>✓ Referencias bibliográficas</div>
+                                        <div>✓ Ortografía y gramática</div>
+                                        <div>✓ Formato SENA aplicado</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen de instrumentos -->
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-left: 4px solid #6366f1; border-radius: var(--border-radius-md);">
+                            <h3 style="margin-top: 0; color: #6366f1;">📋 Resumen de Instrumentos Aplicados</h3>
+                            <p style="margin: 0.5rem 0;">Los ejemplos presentados demuestran cómo adaptar instrumentos de verificación a diferentes tipos de artefactos en un proyecto de desarrollo de videojuegos:</p>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; line-height: 1.8;">
+                                <li><strong>Diseño Visual:</strong> Criterios técnicos específicos (resolución, color, formato)</li>
+                                <li><strong>Código:</strong> Funcionalidad y rendimiento de mecánicas core</li>
+                                <li><strong>Audio:</strong> Calidad técnica y coherencia estética</li>
+                                <li><strong>UI/UX:</strong> Usabilidad y accesibilidad para el usuario</li>
+                                <li><strong>Documentación:</strong> Cumplimiento de estándares y trazabilidad</li>
+                            </ul>
+                            <p style="margin: 0.5rem 0 0 0; font-style: italic; font-size: 0.95rem;">Cada instrumento debe ser iterativo y actualizable según la evolución del proyecto.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title">✅ 29.3 Listas de Chequeo para validación de documentos de diseño</h2>
+                    </div>
+                    <div class="section-content">
+                    <p>Listas de chequeo mejoradas para la validación de documentos de diseño del videojuego.</p>
+                        
+                        <!-- Objetivos -->
+                        <div class="principles-grid" style="margin-top: 2rem;">
+                            <div class="principle-card">
+                                <div class="principle-icon">✅</div>
+                                <div class="principle-content">
+                                    <h3>Control de calidad</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">📋</div>
+                                <div class="principle-content">
+                                    <h3>Estandarización</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">⚡</div>
+                                <div class="principle-content">
+                                    <h3>Eficiencia</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">🎯</div>
+                                <div class="principle-content">
+                                    <h3>Especialización</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Importancia -->
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon">🔀</div>
+                                <div class="phase-content">
+                                    <h3>Complejidad multidisciplinaria</h3>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">🔄</div>
+                                <div class="phase-content">
+                                    <h3>Iteración constante</h3>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">👤</div>
+                                <div class="phase-content">
+                                    <h3>Experiencia del usuario</h3>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">⏰</div>
+                                <div class="phase-content">
+                                    <h3>Plazos ajustados</h3>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">🌐</div>
+                                <div class="phase-content">
+                                    <h3>Múltiples plataformas</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Metodología de aplicación -->
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon">📋</div>
+                                <div class="phase-content">
+                                    <h3>Fase de Preparación</h3>
+                                    <p>Primera fase del proceso de validación</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">🔍</div>
+                                <div class="phase-content">
+                                    <h3>Fase de Revisión</h3>
+                                    <p>Segunda fase del proceso de validación</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">📊</div>
+                                <div class="phase-content">
+                                    <h3>Fase de Análisis</h3>
+                                    <p>Tercera fase del proceso de validación</p>
+                                </div>
+                            </div>
+                            <div class="phase-card">
+                                <div class="phase-icon">✅</div>
+                                <div class="phase-content">
+                                    <h3>Fase de Validación</h3>
+                                    <p>Cuarta fase del proceso de validación</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Beneficios -->
+                        <div class="principles-grid" style="margin-top: 2rem;">
+                            <div class="principle-card">
+                                <div class="principle-icon">❌</div>
+                                <div class="principle-content">
+                                    <h3>Reducción de errores</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">⏱️</div>
+                                <div class="principle-content">
+                                    <h3>Ahorro de tiempo</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">💬</div>
+                                <div class="principle-content">
+                                    <h3>Mejor comunicación</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">📈</div>
+                                <div class="principle-content">
+                                    <h3>Mejora continua</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">✅</div>
+                                <div class="principle-content">
+                                    <h3>Control de calidad</h3>
+                                </div>
+                            </div>
+                            <div class="principle-card">
+                                <div class="principle-icon">📚</div>
+                                <div class="principle-content">
+                                    <h3>Documentación histórica</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title">🧩 29.3.5 Lista de chequeo 1: Diseño Conceptual</h2>
+                    </div>
+                    <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>1.1</td><td>GDD completo y actualizado</td><td>☐</td><td></td></tr>
+                            <tr><td>1.2</td><td>Arte conceptual de personajes aprobado</td><td>☐</td><td></td></tr>
+                            <tr><td>1.3</td><td>Niveles y ambientes documentados visualmente</td><td>☐</td><td></td></tr>
+                            <tr><td>1.4</td><td>Paleta de colores y estilo visual consistentes</td><td>☐</td><td></td></tr>
+                            <tr><td>1.5</td><td>Storyboard/guion visual de secuencias clave</td><td>☐</td><td></td></tr>
+                            <tr><td>1.6</td><td>Referencias de arte y mood boards organizadas</td><td>☐</td><td></td></tr>
+                            <tr><td>1.7</td><td>UI/UX: wireframes y mockups</td><td>☐</td><td></td></tr>
+                            <tr><td>1.8</td><td>Especificaciones técnicas de arte (resoluciones, formatos)</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">🎮 29.3.6 Lista de chequeo 2: Mecánicas de Juego</h2>
+                </div>
+                <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>2.1</td><td>Mecánicas principales documentadas y probadas</td><td>☐</td><td></td></tr>
+                            <tr><td>2.2</td><td>Controles definidos para todas las plataformas</td><td>☐</td><td></td></tr>
+                            <tr><td>2.3</td><td>Balance de dificultad documentado</td><td>☐</td><td></td></tr>
+                            <tr><td>2.4</td><td>Progresión del jugador especificada</td><td>☐</td><td></td></tr>
+                            <tr><td>2.5</td><td>Recompensas y logros implementados</td><td>☐</td><td></td></tr>
+                            <tr><td>2.6</td><td>Sistema de guardado y carga funcional</td><td>☐</td><td></td></tr>
+                            <tr><td>2.7</td><td>Multijugador (si aplica) documentado</td><td>☐</td><td></td></tr>
+                            <tr><td>2.8</td><td>Tutorial y sistema de ayuda integrados</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">🛠️ 29.3.7 Lista de chequeo 3: Documentos Técnicos</h2>
+                </div>
+                <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>3.1</td><td>Arquitectura documentada con diagramas</td><td>☐</td><td></td></tr>
+                            <tr><td>3.2</td><td>Especificaciones de rendimiento definidas</td><td>☐</td><td></td></tr>
+                            <tr><td>3.3</td><td>Requisitos de hardware por plataforma</td><td>☐</td><td></td></tr>
+                            <tr><td>3.4</td><td>APIs y servicios externos documentados</td><td>☐</td><td></td></tr>
+                            <tr><td>3.5</td><td>Estructura de base de datos diseñada</td><td>☐</td><td></td></tr>
+                            <tr><td>3.6</td><td>Flujo de datos mapeado</td><td>☐</td><td></td></tr>
+                            <tr><td>3.7</td><td>Procedimientos de backup y recuperación</td><td>☐</td><td></td></tr>
+                            <tr><td>3.8</td><td>Documentación de APIs para mods/contenido adicional</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">🎵 29.3.8 Lista de chequeo 4: Audio y Música</h2>
+                </div>
+                <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>4.1</td><td>Banda sonora compuesta y masterizada</td><td>☐</td><td></td></tr>
+                            <tr><td>4.2</td><td>Efectos de sonido categorizados</td><td>☐</td><td></td></tr>
+                            <tr><td>4.3</td><td>Diálogos grabados y sincronizados</td><td>☐</td><td></td></tr>
+                            <tr><td>4.4</td><td>Niveles de audio balanceados</td><td>☐</td><td></td></tr>
+                            <tr><td>4.5</td><td>Audio 3D configurado</td><td>☐</td><td></td></tr>
+                            <tr><td>4.6</td><td>Opciones de configuración implementadas</td><td>☐</td><td></td></tr>
+                            <tr><td>4.7</td><td>Licencias documentadas</td><td>☐</td><td></td></tr>
+                            <tr><td>4.8</td><td>Archivos optimizados por plataforma</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">🧪 29.3.9 Lista de chequeo 5: Testing y QA</h2>
+                </div>
+                <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>5.1</td><td>Plan de pruebas documentado y aprobado</td><td>☐</td><td></td></tr>
+                            <tr><td>5.2</td><td>Casos de prueba de mecánicas principales</td><td>☐</td><td></td></tr>
+                            <tr><td>5.3</td><td>Compatibilidad en dispositivos</td><td>☐</td><td></td></tr>
+                            <tr><td>5.4</td><td>Pruebas de estrés y rendimiento</td><td>☐</td><td></td></tr>
+                            <tr><td>5.5</td><td>Pruebas de usabilidad con usuarios</td><td>☐</td><td></td></tr>
+                            <tr><td>5.6</td><td>Reportes de bugs priorizados</td><td>☐</td><td></td></tr>
+                            <tr><td>5.7</td><td>Pruebas de accesibilidad</td><td>☐</td><td></td></tr>
+                            <tr><td>5.8</td><td>Documentación de regresiones/fixes</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">🌍 29.3.10 Lista de chequeo 6: Localización</h2>
+                </div>
+                <div class="section-content">
+                    <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ítem</th>
+                                        <th>Descripción</th>
+                                        <th>Cumple</th>
+                                        <th>Observaciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                            <tr><td>6.1</td><td>Textos extraídos para traducción</td><td>☐</td><td></td></tr>
+                            <tr><td>6.2</td><td>Idiomas objetivo definidos</td><td>☐</td><td></td></tr>
+                            <tr><td>6.3</td><td>Elementos culturales sensibles identificados</td><td>☐</td><td></td></tr>
+                            <tr><td>6.4</td><td>UI adaptada para diferentes idiomas</td><td>☐</td><td></td></tr>
+                            <tr><td>6.5</td><td>Audio localizado grabado/sincronizado</td><td>☐</td><td></td></tr>
+                            <tr><td>6.6</td><td>Pruebas de localización ejecutadas</td><td>☐</td><td></td></tr>
+                            <tr><td>6.7</td><td>Documentación actualizada</td><td>☐</td><td></td></tr>
+                            <tr><td>6.8</td><td>Certificaciones regionales obtenidas</td><td>☐</td><td></td></tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <div class="section-header">
+                    <h2 class="section-title">📊 29.3.11 Resumen de validación</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight" style="margin-bottom: 2rem;">
+                            <div class="intro-content">
+                                <p>El resumen de validación proporciona un panorama general del estado de cumplimiento de todos los artefactos del proyecto, facilitando el seguimiento y control de calidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="processes-grid">
+                            <div class="process-card">
+                                <div class="process-icon">📊</div>
+                                <div class="process-content">
+                                    <h3>Total de ítems</h3>
+                                    <p>Número total de elementos verificados en todas las listas de chequeo</p>
+                                    <div class="process-details">
+                                        <p>Incluye todos los ítems de las diferentes listas de validación aplicadas al proyecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">✅</div>
+                                <div class="process-content">
+                                    <h3>Ítems cumplidos</h3>
+                                    <p>Cantidad de ítems que han pasado la validación exitosamente</p>
+                                    <div class="process-details">
+                                        <p>Elementos que cumplen con todos los criterios establecidos en las listas de chequeo.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">📈</div>
+                                <div class="process-content">
+                                    <h3>Porcentaje de cumplimiento</h3>
+                                    <p>Ratio de éxito calculado como (ítems cumplidos / total de ítems) × 100</p>
+                                    <div class="process-details">
+                                        <p>Métrica clave que indica el progreso general de la validación del proyecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">📅</div>
+                                <div class="process-content">
+                                    <h3>Fechas de validación</h3>
+                                    <p>Registro temporal de cuándo se realizaron las validaciones</p>
+                                    <div class="process-details">
+                                        <p>Incluye fechas de inicio, revisiones y aprobación final de cada fase de validación.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">👥</div>
+                                <div class="process-content">
+                                    <h3>Ficha de validación</h3>
+                                    <p>Responsables de Diseño, Técnico y QA</p>
+                                    <div class="process-details">
+                                        <p>Documentación de las personas responsables de cada área que realizan y aprueban las validaciones. Incluye firmas y roles específicos en el proceso de verificación.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">📄 29.4 Informe de evaluación a los artefactos de diseño</h2>
+                            </div>
+                <div class="section-content">
+                    <div class="intro-highlight">
+                        <div class="intro-content">
+                            <h3>Informe de Evaluación de Artefactos de Diseño</h3>
+                    <p>El informe de evaluación de artefactos de diseño del software es un documento fundamental del proyecto. Proporciona una evaluación integral y sistemática de todos los elementos de diseño desarrollados durante el ciclo de vida del software, garantizando estándares de calidad y una excelente experiencia de juego.</p>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.1 Objetivos -->
+                    <div class="principles-grid" style="margin-top: 2rem;">
+                        <div class="principle-card">
+                            <div class="principle-icon">🔍</div>
+                            <div class="principle-content">
+                                <h3>Evaluación integral</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">📊</div>
+                            <div class="principle-content">
+                                <h3>Medición de progreso</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">⚠️</div>
+                            <div class="principle-content">
+                                <h3>Identificación de riesgos</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">📈</div>
+                            <div class="principle-content">
+                                <h3>Mejora continua</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.2 Metodología de evaluación -->
+                    <div class="phases-grid" style="margin-top: 2rem;">
+                        <div class="phase-card">
+                            <div class="phase-icon">📋</div>
+                            <div class="phase-content">
+                                <h3>Preparación y planificación</h3>
+                                <p>Primera fase de la metodología de evaluación</p>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">🔍</div>
+                            <div class="phase-content">
+                                <h3>Análisis individual de artefactos</h3>
+                                <p>Segunda fase de la metodología de evaluación</p>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">🔗</div>
+                            <div class="phase-content">
+                                <h3>Evaluación integrada</h3>
+                                <p>Tercera fase de la metodología de evaluación</p>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">📄</div>
+                            <div class="phase-content">
+                                <h3>Consolidación y reporte</h3>
+                                <p>Cuarta fase de la metodología de evaluación</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.3 Criterios de evaluación -->
+                    <div class="processes-grid" style="margin-top: 2rem;">
+                        <div class="process-card">
+                            <div class="process-icon">🎨</div>
+                            <div class="process-content">
+                                <h3>Diseño visual</h3>
+                                <p>Coherencia, usabilidad, rendimiento visual</p>
+                            </div>
+                        </div>
+                        <div class="process-card">
+                            <div class="process-icon">⚙️</div>
+                            <div class="process-content">
+                                <h3>Técnicos</h3>
+                                <p>Arquitectura, funcionalidad, seguridad</p>
+                            </div>
+                        </div>
+                        <div class="process-card">
+                            <div class="process-icon">🎮</div>
+                            <div class="process-content">
+                                <h3>Específicos de videojuegos</h3>
+                                <p>Gameplay, audio, multiplataforma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.4 Herramientas -->
+                    <div class="processes-grid" style="margin-top: 2rem;">
+                        <div class="process-card">
+                            <div class="process-icon">🔍</div>
+                            <div class="process-content">
+                                <h3>SonarQube, ESLint/Stylelint</h3>
+                                <p>Herramientas de análisis estático</p>
+                            </div>
+                        </div>
+                        <div class="process-card">
+                            <div class="process-icon">🧪</div>
+                            <div class="process-content">
+                                <h3>Jest/Mocha, Unity Test Runner</h3>
+                                <p>Herramientas de testing</p>
+                            </div>
+                        </div>
+                        <div class="process-card">
+                            <div class="process-icon">📊</div>
+                            <div class="process-content">
+                                <h3>Unity Profiler, Google Analytics</h3>
+                                <p>Herramientas de análisis de rendimiento</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.5 Métricas -->
+                    <div class="phases-grid" style="margin-top: 2rem;">
+                        <div class="phase-card">
+                            <div class="phase-icon">📊</div>
+                            <div class="phase-content">
+                                <h3>Métricas Cuantitativas</h3>
+                                <div class="phase-activities">
+                                    <div class="activity-item">Cumplimiento</div>
+                                    <div class="activity-item">Defectos</div>
+                                    <div class="activity-item">Rendimiento</div>
+                                    <div class="activity-item">Cobertura</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">⭐</div>
+                            <div class="phase-content">
+                                <h3>Métricas Cualitativas</h3>
+                                <div class="phase-activities">
+                                    <div class="activity-item">Satisfacción</div>
+                                    <div class="activity-item">Calidad visual</div>
+                                    <div class="activity-item">Mantenibilidad</div>
+                                    <div class="activity-item">Documentación</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.6 Aplicación en el proyecto -->
+                    <div class="principles-grid" style="margin-top: 2rem;">
+                        <div class="principle-card">
+                            <div class="principle-icon">🎨</div>
+                            <div class="principle-content">
+                                <h3>Estilo Pixel Art coherente</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">🌐</div>
+                            <div class="principle-content">
+                                <h3>Multiplataforma</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">⚡</div>
+                            <div class="principle-content">
+                                <h3>Rendimiento optimizado</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.7 Estructura del informe -->
+                    <div class="phases-grid" style="margin-top: 2rem;">
+                        <div class="phase-card">
+                            <div class="phase-icon">📄</div>
+                            <div class="phase-content">
+                                <h3>Resumen ejecutivo</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">📋</div>
+                            <div class="phase-content">
+                                <h3>Metodología aplicada</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">🔍</div>
+                            <div class="phase-content">
+                                <h3>Evaluación de artefactos</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">📊</div>
+                            <div class="phase-content">
+                                <h3>Métricas consolidadas</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">⚠️</div>
+                            <div class="phase-content">
+                                <h3>Análisis de riesgos</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">💡</div>
+                            <div class="phase-content">
+                                <h3>Recomendaciones</h3>
+                            </div>
+                        </div>
+                        <div class="phase-card">
+                            <div class="phase-icon">📅</div>
+                            <div class="phase-content">
+                                <h3>Plan de seguimiento</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.8 Beneficios -->
+                    <div class="principles-grid" style="margin-top: 2rem;">
+                        <div class="principle-card">
+                            <div class="principle-icon">✅</div>
+                            <div class="principle-content">
+                                <h3>Control de calidad y mejora continua</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">👁️</div>
+                            <div class="principle-content">
+                                <h3>Visibilidad del progreso</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">🔔</div>
+                            <div class="principle-content">
+                                <h3>Detección temprana</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">📚</div>
+                            <div class="principle-content">
+                                <h3>Documentación histórica</h3>
+                            </div>
+                        </div>
+                        <div class="principle-card">
+                            <div class="principle-icon">💬</div>
+                            <div class="principle-content">
+                                <h3>Comunicación efectiva</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 29.4.9 Conclusión -->
+                    <div class="methodology-info" style="margin-top: 2rem;">
+                        <div class="methodology-highlight">
+                            <h3>29.4.9 Conclusión</h3>
+                    <p>La evaluación sistemática asegura calidad, coherencia y éxito del videojuego, estableciendo un marco para la optimización continua de los procesos de desarrollo.</p>
+                        </div>
+                    </div>
+                            </div>
+            </section>
+
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+
+            <!-- PDF Viewer Section 1 -->
+            <section class="pdf-viewer-section" id="manual">
+                <div class="pdf-viewer-container">
+                    <div class="section-header">
+                        <h2 class="section-title">PDF Listas de Chequeo</h2>
+                        <p class="section-subtitle">Documentación completa de listas de chequeo para validación de documentos de diseño</p>
+                                </div>
+                    <div class="pdf-viewer-wrapper">
+                        <div class="pdf-viewer-header">
+                            </div>
+                        <div class="pdf-viewer-content">
+                            <iframe src="29.1 Listas de Chequeo para validación de documentos de diseño.pdf#page=1" width="100%" height="600px" frameborder="0" title="29. Instrumentos para verificación de artefactos PDF"></iframe>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- PDF Viewer Section 2 -->
+        <section class="pdf-viewer-section" id="manual">
+            <div class="pdf-viewer-container">
+                <div class="section-header">
+                        <h2 class="section-title">PDF Informe de Evaluación</h2>
+                        <p class="section-subtitle">Documentación completa del informe de evaluación a los artefactos de diseño</p>
+                </div>
+                <div class="pdf-viewer-wrapper">
+                    <div class="pdf-viewer-header">
+                    </div>
+                    <div class="pdf-viewer-content">
+                            <iframe src="29.2 Informe de evaluación a los artefactos de diseño.pdf#page=1" width="100%" height="600px" frameborder="0" title="29. Instrumentos para verificación de artefactos PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- PDF Viewer Section 3 -->
+            <section class="pdf-viewer-section" id="manual">
+            <div class="pdf-viewer-container">
+                <div class="section-header">
+                        <h2 class="section-title">PDF Instrumentos de Verificación</h2>
+                        <p class="section-subtitle">Documentación completa de instrumentos para verificación de artefactos</p>
+                </div>
+                <div class="pdf-viewer-wrapper">
+                    <div class="pdf-viewer-header">
+                    </div>
+                    <div class="pdf-viewer-content">
+                            <iframe src="Instrumentos para verificación de artefactos.pdf#page=1" width="100%" height="600px" frameborder="0" title="29. Instrumentos para verificación de artefactos PDF"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-navigation"><a href="../28. Validación de Documentos/28. Validación de Documentos.html" class="nav-button prev-button"><span class="nav-icon">←</span><span class="nav-text">28. Validación de Documentos</span></a>
+<a href="../index.html" class="nav-button home-button"><span class="nav-icon">🏠</span><span class="nav-text">Inicio</span></a>
+<a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html" class="nav-button next-button"><span class="nav-text">30. Elaborar el prototipo navegable</span><span class="nav-icon">→</span></a>
+</div>
+                            
+        
+        <footer class="footer-section" id="contacto">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-icon">🎓</span>
+                            <span class="logo-text">Proyecto SENA</span>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column sitemap-column">
+                            <button class="sitemap-button" onclick="openSitemapModal()">
+                                <span class="sitemap-icon">🗺️</span>
+                                <span>Mapa del Sitio</span>
+                            </button>
+                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                </div>
+                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>2025-2026 / <strong><em>Desarrollador: Lyam Acosta Forero</em></strong>. Proyecto SENA - Análisis y Desarrollo de Software</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+    <!-- Sitemap Modal -->
+    <div class="sitemap-modal" id="sitemapModal">
+        <div class="sitemap-modal-content">
+            <div class="sitemap-modal-header">
+                <h2>🗺️ Mapa del Sitio</h2>
+                <button class="sitemap-close" onclick="closeSitemapModal()">&times;</button>
+            </div>
+            <div class="sitemap-modal-body">
+                <div class="sitemap-grid">
+                    <a href="../1. Introduccion/1. Introduccion.html">1. Introducción</a>
+                    <a href="../2. Procesos organizacionales/2. Procesos organizacionales.html">2. Procesos organizacionales</a>
+                    <a href="../3. Ingenieria de requisitos/3. Ingenieria de requisitos.html">3. Ingeniería de requisitos</a>
+                    <a href="../4. Recoleccion de informacion/4. Recoleccion de informacion.html">4. Recolección de información</a>
+                    <a href="../5. Formulacion de Proyecto/5. Formulacion de Proyecto.html">5. Formulación de Proyecto</a>
+                    <a href="../6. Formulario de recoleccion de informacion/6. Formulario de recoleccion de informacion.html">6. Formulario de recolección de información</a>
+                    <a href="../7. Especificacion de Requerimientos/7. Especificacion de Requerimientos.html">7. Especificación de Requerimientos</a>
+                    <a href="../8. Evaluacion de requerimientos/8. Evaluacion de requerimientos.html">8. Evaluación de requerimientos</a>
+                    <a href="../9. Metodologias de desarrollo/9. Metodologias de desarrollo.html">9. Metodologías de desarrollo</a>
+                                    <a href="../10. Metodología para el proyecto/10. Metodología para el proyecto.html">10. Metodología para el proyecto</a>
+                                    <a href="../11. Software y servicios de internet/11. Software y servicios de internet.html">11. Software y servicios de internet</a>
+                                    <a href="../12. Mejora de productos y procesos con la incorporación de TIC/12. Mejora de productos y procesos con la incorporación de TIC.html">12. Mejora de productos y procesos con la incorporación de TIC</a>
+                                    <a href="../13. Diagramas para la especificación y análisis de requisitos/13. Diagramas para la especificación y análisis de requisitos.html">13. Diagramas para la especificación y análisis de requisitos</a>
+                                    <a href="../14. Diagramas y plantillas para casos de uso del proyecto/14. Diagramas y plantillas para casos de uso del proyecto.html">14. Diagramas y plantillas para casos de uso del proyecto</a>
+                                    <a href="../15. Historias de usuario del proyecto/15. Historias de usuario del proyecto.html">15. Historias de usuario del proyecto</a>
+                                    <a href="../16. Modelo del dominio del Proyecto/16. Modelo del dominio del Proyecto.html">16. Modelo del dominio del Proyecto</a>
+                    <a href="../17. Validación de Documentos/17. Validación de Documentos.html">17. Validación de Documentos</a>
+                                    <a href="../18. Listas de chequeo para la validación de artefactos/18. Listas de chequeo para la validación de artefactos.html">18. Listas de chequeo para la validación de artefactos</a>
+                    <a href="../19. Referentes Tecnicos Hardware Software/19. Referentes Tecnicos Hardware Software.html">19. Especificación de los referentes técnicos del hardware - software y estimación de las condiciones económicas</a>
+                                    <a href="../20. Ficha técnica de los productos requeridos/20. Ficha técnica de los productos requeridos.html">20. Ficha técnica de los productos requeridos</a>
+                                    <a href="../21. Diseño de tablas comparativas sobre presupuestos de hardware y software/21. Diseño de tablas comparativas sobre presupuestos de hardware y software.html">21. Diseño de tablas comparativas sobre presupuestos de hardware y software</a>
+                                    <a href="../22. Propuesta técnica y económica para la implementación del proyecto/22. Propuesta técnica y económica para la implementación del proyecto.html">22. Propuesta técnica y económica para la implementación del proyecto</a>
+                                    <a href="../23. Modelos conceptual y lógico para el proyecto/23. Modelos conceptual y lógico para el proyecto.html">23. Modelos conceptual y lógico para el proyecto</a>
+                                    <a href="../24. Informe de entregables para el proyecto de desarrollo de software/24. Informe de entregables para el proyecto de desarrollo de software.html">24. Informe de entregables para el proyecto de desarrollo de software</a>
+                                    <a href="../25. Diagrama de Clases del proyecto de software/25. Diagrama de Clases del proyecto de software.html">25. Diagrama de Clases del proyecto de software</a>
+                    <a href="../26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado/26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado.html">26. Desarrollar la arquitectura de software de acuerdo con el patrón de diseño seleccionado</a>
+                    <a href="../27. Arquitectura de Software/27. Arquitectura de Software.html">27. Arquitectura de Software</a>
+                                    <a href="../28. Validación de Documentos/28. Validación de Documentos.html">28. Validación de Documentos</a>
+                                    <a href="../29. Instrumentos para verificación de artefactos/29. Instrumentos para verificación de artefactos.html">29. Instrumentos para verificación de artefactos</a>
+                    <a href="../30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad/30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad.html">30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</a>
+                    <a href="../31. Crear un modelo de base de datos con base a los requerimientos del cliente/31. Crear un modelo de base de datos con base a los requerimientos del cliente.html">31. Crear un modelo de base de datos con base a los requerimientos del cliente</a>
+                    <a href="../32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)/32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD).html">32. Manipular datos en el Sistema Administrador de Bases de Datos (SMBD)</a>
+                    <a href="../33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles/33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles.html">33. Crear interfaces gráficas de usuario en aplicaciones de escritorio, web y móviles</a>
+                    <a href="../34. Generar plantillas y estilos/34. Generar plantillas y estilos.html">34. Generar plantillas y estilos</a>
+                    <a href="../35. Configurar herramientas de versionamiento para control de código/35. Configurar herramientas de versionamiento para control de código.html">35. Configurar herramientas de versionamiento para control de código</a>
+                    <a href="../36. Aplicar estándares de codificación/36. Aplicar estándares de codificación.html">36. Aplicar estándares de codificación</a>
+                    <a href="../37. Codificar los módulos del software Stand-alone, web y móvil/37. Codificar los módulos del software Stand-alone, web y móvil.html">37. Codificar los módulos del software Stand-alone, web y móvil</a>
+                    <a href="../38. Codificar el frontend utilizando framework/38. Codificar el frontend utilizando framework.html">38. Codificar el frontend utilizando framework</a>
+                    <a href="../39. Crear servicios web/39. Crear servicios web.html">39. Crear servicios web</a>
+                    <a href="../40. Integrar módulos/40. Integrar módulos.html">40. Integrar módulos</a>
+                    <a href="../41. Incorporar tecnologías emergentes y disruptivas/41. Incorporar tecnologías emergentes y disruptivas.html">41. Incorporar tecnologías emergentes y disruptivas</a>
+                    <a href="../42. Realizar plan de pruebas/42. Realizar plan de pruebas.html">42. Realizar plan de pruebas</a>
+                    <a href="../43. Definir casos y ambiente de prueba/43. Definir casos y ambiente de prueba.html">43. Definir casos y ambiente de prueba</a>
+                    <a href="../44. Documentar y realizar pruebas/44. Documentar y realizar pruebas.html">44. Documentar y realizar pruebas</a>
+                    <a href="../45. Preparar la plataforma tecnológica/45. Preparar la plataforma tecnológica.html">45. Preparar la plataforma tecnológica</a>
+                    <a href="../46. Verificacion Hardware Software/46. Verificacion Hardware Software.html">46. Verificar el cumplimiento de las características mínimas de hardware requeridas para el software desarrollado</a>
+                    <a href="../47. Elaborar el plan de instalación/47. Elaborar el plan de instalación.html">47. Elaborar el plan de instalación</a>
+                    <a href="../48. Configurar los servicios requeridos/48. Configurar los servicios requeridos.html">48. Configurar los servicios requeridos</a>
+                    <a href="../49. Configurar el software en el servidor y la base de datos/49. Configurar el software en el servidor y la base de datos.html">49. Configurar el software en el servidor y la base de datos</a>
+                    <a href="../50. Cargar archivos en el sitio de publicación/50. Cargar archivos en el sitio de publicación.html">50. Cargar archivos en el sitio de publicación</a>
+                    <a href="../51. Realizar pruebas de funcionalidad del software/51. Realizar pruebas de funcionalidad del software.html">51. Realizar pruebas de funcionalidad del software</a>
+                    <a href="../52. Elaborar planes de mantenimiento y soporte del software/52. Elaborar planes de mantenimiento y soporte del software.html">52. Elaborar planes de mantenimiento y soporte del software</a>
+                    <a href="../53. Documentar el proceso de migración y respaldo de los datos/53. Documentar el proceso de migración y respaldo de los datos.html">53. Documentar el proceso de migración y respaldo de los datos</a>
+                    <a href="../54. Elaborar manuales de instalación, técnico y de usuario/54. Elaborar manuales de instalación, técnico y de usuario.html">54. Elaborar manuales de instalación, técnico y de usuario</a>
+                    <a href="../55. Elaborar el manual de usuario/55. Elaborar el manual de usuario.html">55. Elaborar el manual de usuario</a>
+                    <a href="../56. Capacitar a los usuarios y realizar pruebas de aceptación/56. Capacitar a los usuarios y realizar pruebas de aceptación.html">56. Capacitar a los usuarios y realizar pruebas de aceptación</a>
+                    <a href="../57. Elaborar acta de entrega/57. Elaborar acta de entrega.html">57. Elaborar acta de entrega</a>
+                    <a href="../58. Aplicar los instrumentos de calidad de software/58. Aplicar los instrumentos de calidad de software.html">58. Aplicar los instrumentos de calidad de software</a>
+                    <a href="../59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas/59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas.html">59. Realizar el informe de evaluación de la calidad de software y bitácora de lecciones aprendidas</a>
+                    <a href="../60. Ajustar procesos del desarrollo de software/60. Ajustar procesos del desarrollo de software.html">60. Ajustar procesos del desarrollo de software</a>
+                </div>
+            </div>
+        </div>
+    </div>
+                </body>
+                </html>                
+
+    <script>
+        // Dropdown functionality
+        function toggleProyectoDropdown() {
+            const dropdown = document.querySelector('.nav-dropdown');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            menu.classList.toggle('show');
+        }
+
+        function toggleDropdown() {
+            const dropdown = document.querySelector('.nav-dropdown:last-child');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            menu.classList.toggle('show');
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const dropdowns = document.querySelectorAll('.nav-dropdown');
+            dropdowns.forEach(dropdown => {
+                if (!dropdown.contains(event.target)) {
+                    const menu = dropdown.querySelector('.dropdown-menu');
+                    menu.classList.remove('show');
+                }
+            });
+        });
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animación a las tarjetas
+        document.querySelectorAll('.process-card, .phase-card, .tool-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
