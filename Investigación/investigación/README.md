@@ -106,6 +106,33 @@ Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se d
 
 6. **Gasto promedio**: Los jugadores invierten entre $70.000 y $100.000 pesos colombianos en promedio en videojuegos.
 
+### 💼 Resultados de Entrevistas a Emprendedores
+
+Se entrevistaron **10 emprendedores** del sector de videojuegos. Los hallazgos principales fueron:
+
+- **70% (7 de 10)** identificaron la **falta de financiamiento** como el principal obstáculo para llevar sus productos al ámbito global
+- Los emprendedores muestran **esperanza** por el apoyo del **Ministerio de TIC**, que está convirtiendo a **Bogotá en un motor de nuevas tecnologías**, lo que puede incluir esta industria
+
+### 📊 Estadísticas del Mercado Colombiano
+
+- **Mercado en 2024**: El mercado colombiano generó casi **$450 millones** en 2024
+- **Tendencia de crecimiento**: El número de jugadores está aumentando significativamente
+
+### 🎮 Preferencias y Hábitos de Consumo
+
+| Preferencia | Porcentaje | Descripción |
+|------------|-----------|-------------|
+| 🎁 Juegos Freemium | **71%** | Prefieren juegos Freemium (por razones obvias) |
+| 🛍️ Compras In-Game | **81%** | Realizan compras dentro de los juegos |
+
+### Conclusiones Principales
+
+1. **Mercado móvil dominante**: El 73% juega en móviles, indicando una fuerte tendencia hacia el gaming móvil
+2. **Oportunidad de mercado**: El mercado colombiano creció a $450M en 2024 y sigue en expansión
+3. **Modelo Freemium exitoso**: 71% prefiere Freemium y 81% realiza compras in-game
+4. **Desafío de financiamiento**: 70% de emprendedores necesita apoyo financiero para internacionalización
+5. **Apoyo gubernamental**: Esperanza en el apoyo del Ministerio de TIC a Bogotá como hub tecnológico
+
 ---
 ## 🎨 Estilos CSS
 
