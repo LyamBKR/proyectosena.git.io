@@ -107,14 +107,6 @@ Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se d
 6. **Gasto promedio**: Los jugadores invierten entre $70.000 y $100.000 pesos colombianos en promedio en videojuegos.
 
 ---
-
-## 📝 Notas
-
-- Los archivos Excel deben tener formato `.xlsx`
-- Mantén los archivos organizados por fecha o tema
-- Actualiza este README cuando agregues nuevos archivos
-- El diseño visual de la página incluye estilos CSS personalizados para tablas, listas de preguntas y contenedores
-
 ## 🎨 Estilos CSS
 
 La página de investigación utiliza estilos CSS personalizados incluidos en `css/style.css`:
