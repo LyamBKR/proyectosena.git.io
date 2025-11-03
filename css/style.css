@@ -14622,3 +14622,272 @@ body {
 .svg-icon-margin {
     margin-right: 8px;
 }
+
+/* ========================================
+   Estilos para Módulo de Investigación - Recolección de Información
+   ======================================== */
+
+/* Estilos para secciones de recolección de información */
+.investigation-section-header {
+    background: #2d5016 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.3);
+    transition: all 0.3s ease;
+}
+
+.investigation-section-header:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(45, 80, 22, 0.4);
+}
+
+/* Estilos para tablas de información */
+.investigation-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin: var(--space-lg) 0;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.investigation-table thead {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.3), rgba(0, 120, 242, 0.2));
+}
+
+.investigation-table th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-primary);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-size: var(--font-size-base);
+    letter-spacing: 0.3px;
+}
+
+.investigation-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.investigation-table tbody tr {
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.investigation-table tbody tr:hover {
+    background: rgba(0, 120, 242, 0.15);
+    transform: translateX(4px);
+}
+
+.investigation-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.investigation-table tbody tr:nth-child(even):hover {
+    background: rgba(0, 120, 242, 0.15);
+}
+
+/* Estilos para lista de preguntas del instrumento */
+.investigation-questions-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-lg) 0;
+}
+
+.investigation-questions-list li {
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-md);
+    background: var(--gradient-card);
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius-md);
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: calc(var(--space-lg) + 1.5rem);
+}
+
+.investigation-questions-list li::before {
+    content: counter(item, decimal) '.';
+    counter-increment: item;
+    position: absolute;
+    left: var(--space-lg);
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.investigation-questions-list {
+    counter-reset: item;
+}
+
+.investigation-questions-list li:hover {
+    background: rgba(0, 120, 242, 0.1);
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(0, 120, 242, 0.2);
+}
+
+/* Estilos para sección de entrevistas para expertos */
+.expert-interviews-header {
+    background: #f7c948 !important;
+    color: #000 !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(247, 201, 72, 0.3);
+    transition: all 0.3s ease;
+}
+
+.expert-interviews-header:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(247, 201, 72, 0.4);
+}
+
+/* Estilos para link de encuesta */
+.survey-link-container {
+    margin-top: var(--space-lg);
+    padding: 2rem;
+    background: linear-gradient(135deg, #f7c948, #ffd54f);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(247, 201, 72, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.survey-link-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.survey-link-container:hover::before {
+    left: 100%;
+}
+
+.survey-link-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(247, 201, 72, 0.5);
+}
+
+.survey-link-title {
+    color: #000;
+    margin-bottom: var(--space-md);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.survey-link-container a {
+    color: #0078d4;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-md);
+    border: 2px solid transparent;
+}
+
+.survey-link-container a:hover {
+    color: #005a9e;
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #0078d4;
+    transform: scale(1.05);
+}
+
+.survey-link-container a:active {
+    transform: scale(0.98);
+}
+
+/* Estilos responsivos para módulo de investigación */
+@media (max-width: 768px) {
+    .investigation-section-header,
+    .expert-interviews-header {
+        font-size: 1.2rem;
+        padding: 0.875rem 1rem;
+    }
+
+    .investigation-table {
+        font-size: 0.9rem;
+    }
+
+    .investigation-table th,
+    .investigation-table td {
+        padding: 10px 12px;
+    }
+
+    .investigation-questions-list li {
+        font-size: 0.95rem;
+        padding: var(--space-sm) var(--space-md);
+        padding-left: calc(var(--space-md) + 1.2rem);
+    }
+
+    .investigation-questions-list li::before {
+        left: var(--space-md);
+    }
+
+    .survey-link-container {
+        padding: 1.5rem;
+    }
+
+    .survey-link-title {
+        font-size: 1.2rem;
+    }
+
+    .survey-link-container a {
+        font-size: 1rem;
+        padding: var(--space-xs) var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .investigation-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .investigation-table th,
+    .investigation-table td {
+        min-width: 150px;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .investigation-questions-list li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .survey-link-container {
+        padding: 1rem;
+    }
+
+    .survey-link-container a {
+        font-size: 0.9rem;
+        word-break: break-all;
+    }
+}
