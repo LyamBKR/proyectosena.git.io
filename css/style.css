@@ -14892,3 +14892,1291 @@ body {
         word-break: break-all;
     }
 }
+
+/* ========================================
+   Estilos mejorados para INFORME FINAL DE INVESTIGACIÓN
+   Aplica a todas las secciones con clase quote-highlight
+   ======================================== */
+
+/* Estilos mejorados para secciones de informe final */
+.quote-highlight {
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    border: 1px solid rgba(0, 120, 242, 0.2) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.quote-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    z-index: 1;
+}
+
+.quote-highlight:hover::before {
+    opacity: 1;
+}
+
+.quote-highlight:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 120, 242, 0.25) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.quote-highlight::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 120, 242, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.quote-highlight:hover::after {
+    opacity: 1;
+}
+
+.quote-highlight h4 {
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:hover h4 {
+    color: var(--primary-color) !important;
+    transform: translateX(4px);
+}
+
+.quote-highlight p {
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:hover p {
+    color: var(--text-primary) !important;
+}
+
+/* Animación de entrada para las secciones de informe */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.quote-highlight {
+    animation: slideInFromLeft 0.6s ease-out;
+}
+
+/* Responsive para secciones de informe final */
+@media (max-width: 768px) {
+    .quote-highlight {
+        padding: 1.5rem !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    .quote-highlight h4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .quote-highlight p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-highlight {
+        padding: 1rem !important;
+        margin-top: 1rem !important;
+    }
+    
+    .quote-highlight h4 {
+        font-size: 1rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .quote-highlight p {
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+    }
+}
+
+/* ========================================
+   Centrar todos los títulos y subtítulos en la página de Investigación
+   ======================================== */
+
+/* Centrar títulos principales de secciones */
+.section-title,
+.section-header h2,
+.section-header .section-title,
+.content-section .section-title,
+.content-section h2 {
+    text-align: center !important;
+}
+
+/* Centrar subtítulos */
+.section-subtitle,
+.section-header .section-subtitle,
+.content-section .section-subtitle,
+.content-section p.section-subtitle {
+    text-align: center !important;
+}
+
+/* Centrar títulos h3 */
+.content-section h3,
+.intro-content h3,
+.section-content h3,
+.main-content h3 {
+    text-align: center !important;
+}
+
+/* Centrar títulos h4 (mantener el estilo de las secciones pero centrados) */
+.content-section h4,
+.intro-content h4,
+.section-content h4,
+.main-content h4,
+.intro-highlight h4 {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+/* Centrar títulos dentro de quote-highlight */
+.quote-highlight h4 {
+    justify-content: center !important;
+}
+
+/* Centrar otros títulos */
+.content-section h5,
+.content-section h6,
+.intro-content h5,
+.intro-content h6 {
+    text-align: center !important;
+}
+
+/* Centrar títulos de épic header (ya deberían estar centrados pero asegurémonos) */
+.epic-title,
+.epic-subtitle {
+    text-align: center !important;
+}
+
+/* Centrar títulos de fases y cards */
+.phase-card h3,
+.phase-content h3 {
+    text-align: center !important;
+}
+
+/* Responsive - mantener centrado en móviles */
+@media (max-width: 768px) {
+    .section-title,
+    .section-header h2,
+    .section-header .section-title,
+    .content-section h2,
+    .content-section h3,
+    .content-section h4,
+    .intro-content h3,
+    .intro-content h4,
+    .quote-highlight h4 {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title,
+    .section-header h2,
+    .section-header .section-title,
+    .content-section h2,
+    .content-section h3,
+    .content-section h4,
+    .intro-content h3,
+    .intro-content h4,
+    .quote-highlight h4 {
+        text-align: center !important;
+    }
+}
+
+/* ========================================
+   Estilos para sección PLANTEAMIENTO - Investigación
+   ======================================== */
+
+/* Estilos para las secciones del planteamiento */
+.intro-content h4 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.15), rgba(124, 58, 237, 0.1));
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-normal);
+}
+
+.intro-content h4:hover {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.2), rgba(124, 58, 237, 0.15));
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 120, 242, 0.2);
+}
+
+.intro-content h4::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+/* Estilos para los párrafos dentro del planteamiento */
+.intro-content > div {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background: var(--gradient-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid transparent;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-content > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.intro-content > div:hover::before {
+    opacity: 1;
+}
+
+.intro-content > div:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-color);
+    background: rgba(0, 120, 242, 0.05);
+}
+
+/* Estilos específicos para cada tipo de sección */
+.intro-content > div:nth-child(1) {
+    border-left-color: #0078f2; /* Azul para Título */
+}
+
+.intro-content > div:nth-child(1):hover {
+    background: rgba(0, 120, 242, 0.08);
+}
+
+.intro-content > div:nth-child(2) {
+    border-left-color: #7c3aed; /* Púrpura para Resumen */
+}
+
+.intro-content > div:nth-child(2):hover {
+    background: rgba(124, 58, 237, 0.08);
+}
+
+.intro-content > div:nth-child(3) {
+    border-left-color: #00d4aa; /* Verde azulado para Palabras clave */
+}
+
+.intro-content > div:nth-child(3):hover {
+    background: rgba(0, 212, 170, 0.08);
+}
+
+.intro-content > div:nth-child(4) {
+    border-left-color: #ff6b35; /* Naranja para Justificación */
+}
+
+.intro-content > div:nth-child(4):hover {
+    background: rgba(255, 107, 53, 0.08);
+}
+
+.intro-content > div:nth-child(5) {
+    border-left-color: #27ae60; /* Verde para Antecedentes */
+}
+
+.intro-content > div:nth-child(5):hover {
+    background: rgba(39, 174, 96, 0.08);
+}
+
+/* Estilos para el texto dentro de cada sección */
+.intro-content > div p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.intro-content > div p strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Estilos especiales para el título del proyecto */
+.intro-content > div:first-child p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 120, 242, 0.1);
+    border-radius: var(--border-radius-md);
+    margin-top: 0.5rem;
+}
+
+/* Estilos para las palabras clave */
+.intro-content > div:nth-child(3) p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+/* Responsive para sección de planteamiento */
+@media (max-width: 768px) {
+    .intro-content h4 {
+        font-size: 1.1rem;
+        padding: 0.625rem 0.875rem;
+    }
+    
+    .intro-content > div {
+        padding: 1rem;
+        margin-top: 1.25rem;
+    }
+    
+    .intro-content > div p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .intro-content > div:first-child p {
+        font-size: 1.1rem;
+        padding: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content h4 {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+        flex-wrap: wrap;
+    }
+    
+    .intro-content > div {
+        padding: 0.875rem;
+        margin-top: 1rem;
+    }
+    
+    .intro-content > div p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding-left: 0.25rem;
+    }
+    
+    .intro-content > div:first-child p {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}
+
+/* ========================================
+   Estilos específicos para INFORME FINAL DE INVESTIGACIÓN
+   Resultados e interpretación y Conclusiones
+   ======================================== */
+
+/* Contenedor principal de los informes finales */
+.quote-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos mejorados para el título del informe */
+.quote-highlight h4 {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.2), rgba(124, 58, 237, 0.15));
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--border-radius-lg);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 120, 242, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 120, 242, 0.15);
+}
+
+.quote-highlight h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.1), rgba(124, 58, 237, 0.1));
+    border-radius: var(--border-radius-lg);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.quote-highlight:hover h4::before {
+    opacity: 1;
+}
+
+.quote-highlight:hover h4 {
+    transform: translateX(6px);
+    box-shadow: 0 6px 20px rgba(0, 120, 242, 0.25);
+    border-color: var(--primary-color);
+}
+
+/* Estilos para el párrafo del informe */
+.quote-highlight p {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+    position: relative;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:hover p {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+    padding-left: 1.75rem;
+}
+
+/* Resaltar números y porcentajes dentro del texto */
+.quote-highlight p strong {
+    color: var(--primary-color);
+    font-weight: 700;
+    background: rgba(0, 120, 242, 0.15);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1.05em;
+    display: inline-block;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:hover p strong {
+    background: rgba(0, 120, 242, 0.25);
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 120, 242, 0.3);
+}
+
+/* Efecto especial para la sección de Resultados e interpretación */
+.quote-highlight:has(h4:contains("Resultados e interpretación")) {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.12), rgba(16, 185, 129, 0.08), rgba(0, 120, 242, 0.05));
+    border-left: 6px solid #10b981;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(16, 185, 129, 0.2);
+    border-right: 1px solid rgba(16, 185, 129, 0.1);
+    border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación"))::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")) h4 {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.3), rgba(16, 185, 129, 0.25), rgba(0, 120, 242, 0.2));
+    border-color: rgba(16, 185, 129, 0.5);
+    border-width: 3px;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")) h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmer 3s infinite;
+    z-index: -1;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")):hover {
+    border-left-color: #10b981;
+    border-left-width: 8px;
+    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.35), 0 0 30px rgba(16, 185, 129, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-6px) scale(1.01);
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.18), rgba(16, 185, 129, 0.12), rgba(0, 120, 242, 0.08));
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")):hover h4 {
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 6px 24px rgba(16, 185, 129, 0.4), inset 0 2px 6px rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.35), rgba(16, 185, 129, 0.3), rgba(0, 120, 242, 0.25));
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")) p {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(16, 185, 129, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(16, 185, 129, 0.1);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    line-height: 2.1;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")) p strong {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2));
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    color: #10b981;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:has(h4:contains("Resultados e interpretación")):hover p strong {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.35), rgba(16, 185, 129, 0.3));
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.15);
+    border-color: rgba(16, 185, 129, 0.5);
+}
+
+/* Efecto especial para la sección de Conclusiones */
+.quote-highlight:has(h4:contains("Conclusiones")) {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(0, 120, 242, 0.08), rgba(124, 58, 237, 0.05));
+    border-left: 6px solid #7c3aed;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(124, 58, 237, 0.2);
+    border-right: 1px solid rgba(124, 58, 237, 0.1);
+    border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.quote-highlight:has(h4:contains("Conclusiones"))::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+    animation: pulseGlowPurple 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes pulseGlowPurple {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) h4 {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.3), rgba(0, 120, 242, 0.25), rgba(124, 58, 237, 0.2));
+    border-color: rgba(124, 58, 237, 0.5);
+    border-width: 3px;
+    box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shimmerPurple 3s infinite;
+    z-index: -1;
+}
+
+@keyframes shimmerPurple {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")):hover {
+    border-left-color: #7c3aed;
+    border-left-width: 8px;
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.35), 0 0 30px rgba(124, 58, 237, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-6px) scale(1.01);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.18), rgba(0, 120, 242, 0.12), rgba(124, 58, 237, 0.08));
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")):hover h4 {
+    transform: translateX(8px) scale(1.02);
+    box-shadow: 0 6px 24px rgba(124, 58, 237, 0.4), inset 0 2px 6px rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(0, 120, 242, 0.3), rgba(124, 58, 237, 0.25));
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) p {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(124, 58, 237, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(124, 58, 237, 0.1);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    line-height: 2.1;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) p strong {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.25), rgba(0, 120, 242, 0.2));
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    color: #7c3aed;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")):hover p strong {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(0, 120, 242, 0.3));
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.15);
+    border-color: rgba(124, 58, 237, 0.5);
+}
+
+/* Icono decorativo para los informes */
+.quote-highlight h4::after {
+    content: '📊';
+    font-size: 1.5rem;
+    margin-left: auto;
+    opacity: 0.7;
+    transition: all var(--transition-normal);
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) h4::after {
+    content: '🎯';
+}
+
+.quote-highlight:hover h4::after {
+    opacity: 1;
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Línea decorativa inferior */
+.quote-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.quote-highlight:hover::after {
+    opacity: 1;
+}
+
+/* Animación de entrada mejorada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quote-highlight {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.quote-highlight:has(h4:contains("Conclusiones")) {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+/* Responsive para informes finales */
+@media (max-width: 768px) {
+    .quote-highlight h4 {
+        font-size: 1.2rem;
+        padding: 1rem 1.25rem;
+        flex-wrap: wrap;
+    }
+    
+    .quote-highlight p {
+        font-size: 1rem;
+        line-height: 1.8;
+        padding: 1.25rem;
+    }
+    
+    .quote-highlight p strong {
+        font-size: 1em;
+        padding: 0.15rem 0.4rem;
+    }
+    
+    .quote-highlight:hover p {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-highlight h4 {
+        font-size: 1.1rem;
+        padding: 0.875rem 1rem;
+    }
+    
+    .quote-highlight h4::after {
+        font-size: 1.25rem;
+    }
+    
+    .quote-highlight p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    .quote-highlight p strong {
+        font-size: 0.95em;
+        padding: 0.1rem 0.3rem;
+        display: inline;
+    }
+    
+    .quote-highlight:hover p {
+        padding-left: 1.25rem;
+    }
+}
+
+/* ========================================
+   Estilos específicos usando clases para INFORME FINAL
+   Usando las clases informe-final-resultados e informe-final-conclusiones
+   ======================================== */
+
+/* Estilos para la sección de Resultados e interpretación */
+.quote-highlight.informe-final-resultados {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.12), rgba(16, 185, 129, 0.08), rgba(0, 120, 242, 0.05)) !important;
+    border-left: 6px solid #0078f2 !important;
+    border-radius: var(--border-radius-lg) !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 120, 242, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 120, 242, 0.2);
+    border-right: 1px solid rgba(0, 120, 242, 0.1);
+    border-bottom: 1px solid rgba(0, 120, 242, 0.1);
+    transition: all var(--transition-normal) !important;
+}
+
+.quote-highlight.informe-final-resultados::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 120, 242, 0.15) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+.quote-highlight.informe-final-resultados:hover {
+    border-left-width: 8px !important;
+    box-shadow: 0 12px 40px rgba(0, 120, 242, 0.35), 0 0 30px rgba(0, 120, 242, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-6px) scale(1.01) !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.18), rgba(16, 185, 129, 0.12), rgba(0, 120, 242, 0.08)) !important;
+}
+
+.quote-highlight.informe-final-resultados h4 {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.2), rgba(16, 185, 129, 0.15)) !important;
+    padding: 1.25rem 1.5rem !important;
+    border-radius: var(--border-radius-lg) !important;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(0, 120, 242, 0.15) !important;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.5px;
+    text-align: center !important;
+    z-index: 2;
+}
+
+.quote-highlight.informe-final-resultados:hover h4 {
+    transform: translateX(6px) scale(1.02) !important;
+    box-shadow: 0 6px 20px rgba(0, 120, 242, 0.25) !important;
+    border-color: #0078f2 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+}
+
+.quote-highlight.informe-final-resultados p {
+    font-size: 1.1rem !important;
+    line-height: 2.1 !important;
+    text-align: justify !important;
+    color: var(--text-secondary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 120, 242, 0.05), rgba(255, 255, 255, 0.02)) !important;
+    padding: 2rem !important;
+    border-radius: var(--border-radius-md) !important;
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 120, 242, 0.1);
+    word-spacing: -0.15em !important;
+}
+
+.quote-highlight.informe-final-resultados:hover p {
+    color: var(--text-primary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 120, 242, 0.08), rgba(255, 255, 255, 0.03)) !important;
+    padding-left: 2.25rem !important;
+    border-color: rgba(0, 120, 242, 0.2);
+}
+
+.quote-highlight.informe-final-resultados p strong {
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+    padding: 0.3rem 0.7rem !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 2px 8px rgba(0, 120, 242, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+    font-size: 1.05em !important;
+    display: inline !important;
+    margin: 0 !important;
+    vertical-align: baseline !important;
+    transition: all var(--transition-normal) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    white-space: normal !important;
+    word-spacing: 0 !important;
+}
+
+.quote-highlight.informe-final-resultados:hover p strong {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.35), rgba(16, 185, 129, 0.3)) !important;
+    display: inline-block !important;
+    transform: scale(1.08) translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 120, 242, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(0, 120, 242, 0.5) !important;
+}
+
+/* Estilos para la sección de Conclusiones */
+.quote-highlight.informe-final-conclusiones {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.12), rgba(16, 185, 129, 0.08), rgba(0, 120, 242, 0.05)) !important;
+    border-left: 6px solid #0078f2 !important;
+    border-radius: var(--border-radius-lg) !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 120, 242, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 120, 242, 0.2);
+    border-right: 1px solid rgba(0, 120, 242, 0.1);
+    border-bottom: 1px solid rgba(0, 120, 242, 0.1);
+    transition: all var(--transition-normal) !important;
+}
+
+.quote-highlight.informe-final-conclusiones::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 120, 242, 0.15) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+.quote-highlight.informe-final-conclusiones:hover {
+    border-left-width: 8px !important;
+    box-shadow: 0 12px 40px rgba(0, 120, 242, 0.35), 0 0 30px rgba(0, 120, 242, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-6px) scale(1.01) !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.18), rgba(16, 185, 129, 0.12), rgba(0, 120, 242, 0.08)) !important;
+}
+
+.quote-highlight.informe-final-conclusiones h4 {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.2), rgba(16, 185, 129, 0.15)) !important;
+    padding: 1.25rem 1.5rem !important;
+    border-radius: var(--border-radius-lg) !important;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(0, 120, 242, 0.15) !important;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.5px;
+    text-align: center !important;
+    z-index: 2;
+}
+
+.quote-highlight.informe-final-conclusiones:hover h4 {
+    transform: translateX(6px) scale(1.02) !important;
+    box-shadow: 0 6px 20px rgba(0, 120, 242, 0.25) !important;
+    border-color: #0078f2 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+}
+
+.quote-highlight.informe-final-conclusiones p {
+    font-size: 1.1rem !important;
+    line-height: 2.1 !important;
+    text-align: justify !important;
+    color: var(--text-secondary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 120, 242, 0.05), rgba(255, 255, 255, 0.02)) !important;
+    padding: 2rem !important;
+    border-radius: var(--border-radius-md) !important;
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 120, 242, 0.1);
+    word-spacing: -0.15em !important;
+}
+
+.quote-highlight.informe-final-conclusiones:hover p {
+    color: var(--text-primary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 120, 242, 0.08), rgba(255, 255, 255, 0.03)) !important;
+    padding-left: 2.25rem !important;
+    border-color: rgba(0, 120, 242, 0.2);
+}
+
+.quote-highlight.informe-final-conclusiones p strong {
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+    padding: 0.3rem 0.7rem !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 2px 8px rgba(0, 120, 242, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+    font-size: 1.05em !important;
+    display: inline !important;
+    margin: 0 !important;
+    vertical-align: baseline !important;
+    transition: all var(--transition-normal) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    white-space: normal !important;
+    word-spacing: 0 !important;
+}
+
+.quote-highlight.informe-final-conclusiones:hover p strong {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.35), rgba(16, 185, 129, 0.3)) !important;
+    display: inline-block !important;
+    transform: scale(1.08) translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 120, 242, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(0, 120, 242, 0.5) !important;
+}
+
+/* Animaciones para las clases específicas */
+.quote-highlight.informe-final-resultados {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.quote-highlight.informe-final-conclusiones {
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+
+/* Responsive para las clases específicas */
+@media (max-width: 768px) {
+    .quote-highlight.informe-final-resultados h4,
+    .quote-highlight.informe-final-conclusiones h4 {
+        font-size: 1.2rem !important;
+        padding: 1rem 1.25rem !important;
+    }
+
+    .quote-highlight.informe-final-resultados p,
+    .quote-highlight.informe-final-conclusiones p {
+        font-size: 1rem !important;
+        line-height: 1.8 !important;
+        padding: 1.25rem !important;
+    }
+
+    .quote-highlight.informe-final-resultados:hover p,
+    .quote-highlight.informe-final-conclusiones:hover p {
+        padding-left: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-highlight.informe-final-resultados h4,
+    .quote-highlight.informe-final-conclusiones h4 {
+        font-size: 1.1rem !important;
+        padding: 0.875rem 1rem !important;
+    }
+
+    .quote-highlight.informe-final-resultados p,
+    .quote-highlight.informe-final-conclusiones p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+        padding: 1rem !important;
+        text-align: left !important;
+    }
+
+    .quote-highlight.informe-final-resultados:hover p,
+    .quote-highlight.informe-final-conclusiones:hover p {
+        padding-left: 1.25rem !important;
+    }
+}
+
+/* ========================================
+   Estilos para Resultados de la Encuesta
+   Similar a las secciones del informe final
+   ======================================== */
+
+.quote-highlight.resultados-encuesta {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.12), rgba(16, 185, 129, 0.08), rgba(0, 120, 242, 0.05)) !important;
+    border-left: 6px solid #0078f2 !important;
+    border-radius: var(--border-radius-lg) !important;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 120, 242, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 120, 242, 0.2);
+    border-right: 1px solid rgba(0, 120, 242, 0.1);
+    border-bottom: 1px solid rgba(0, 120, 242, 0.1);
+    transition: all var(--transition-normal) !important;
+}
+
+.quote-highlight.resultados-encuesta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 120, 242, 0.15) 0%, transparent 70%);
+    animation: pulseGlow 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+.quote-highlight.resultados-encuesta:hover {
+    border-left-width: 8px !important;
+    box-shadow: 0 12px 40px rgba(0, 120, 242, 0.35), 0 0 30px rgba(0, 120, 242, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-6px) scale(1.01) !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.18), rgba(16, 185, 129, 0.12), rgba(0, 120, 242, 0.08)) !important;
+}
+
+.quote-highlight.resultados-encuesta h4 {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.2), rgba(16, 185, 129, 0.15)) !important;
+    padding: 1.25rem 1.5rem !important;
+    border-radius: var(--border-radius-lg) !important;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(0, 120, 242, 0.15) !important;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.5px;
+    text-align: center !important;
+    z-index: 2;
+}
+
+.quote-highlight.resultados-encuesta:hover h4 {
+    transform: translateX(6px) scale(1.02) !important;
+    box-shadow: 0 6px 20px rgba(0, 120, 242, 0.25) !important;
+    border-color: #0078f2 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+}
+
+.quote-highlight.resultados-encuesta p {
+    font-size: 1.1rem !important;
+    line-height: 2.1 !important;
+    text-align: justify !important;
+    color: var(--text-secondary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 120, 242, 0.05), rgba(255, 255, 255, 0.02)) !important;
+    padding: 2rem !important;
+    border-radius: var(--border-radius-md) !important;
+    position: relative;
+    z-index: 2;
+    transition: all var(--transition-normal) !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 120, 242, 0.1);
+    word-spacing: -0.15em !important;
+}
+
+.quote-highlight.resultados-encuesta:hover p {
+    color: var(--text-primary) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 120, 242, 0.08), rgba(255, 255, 255, 0.03)) !important;
+    padding-left: 2.25rem !important;
+    border-color: rgba(0, 120, 242, 0.2);
+}
+
+.quote-highlight.resultados-encuesta p strong {
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.25), rgba(16, 185, 129, 0.2)) !important;
+    padding: 0.3rem 0.7rem !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 120, 242, 0.3) !important;
+    box-shadow: 0 2px 8px rgba(0, 120, 242, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+    font-size: 1.05em !important;
+    display: inline !important;
+    margin: 0 !important;
+    vertical-align: baseline !important;
+    transition: all var(--transition-normal) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    white-space: normal !important;
+    word-spacing: 0 !important;
+}
+
+.quote-highlight.resultados-encuesta:hover p strong {
+    background: linear-gradient(135deg, rgba(0, 120, 242, 0.35), rgba(16, 185, 129, 0.3)) !important;
+    display: inline-block !important;
+    transform: scale(1.08) translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 120, 242, 0.4), inset 0 1px 3px rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(0, 120, 242, 0.5) !important;
+}
+
+/* Animación para resultados de encuesta */
+.quote-highlight.resultados-encuesta {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive para resultados de encuesta */
+@media (max-width: 768px) {
+    .quote-highlight.resultados-encuesta h4 {
+        font-size: 1.2rem !important;
+        padding: 1rem 1.25rem !important;
+    }
+
+    .quote-highlight.resultados-encuesta p {
+        font-size: 1rem !important;
+        line-height: 1.8 !important;
+        padding: 1.25rem !important;
+    }
+
+    .quote-highlight.resultados-encuesta:hover p {
+        padding-left: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-highlight.resultados-encuesta h4 {
+        font-size: 1.1rem !important;
+        padding: 0.875rem 1rem !important;
+    }
+
+    .quote-highlight.resultados-encuesta p {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+        padding: 1rem !important;
+        text-align: left !important;
+    }
+
+    .quote-highlight.resultados-encuesta:hover p {
+        padding-left: 1.25rem !important;
+    }
+}
