@@ -20,7 +20,8 @@ Desarrollar un videojuego que permita a los estudiantes aprender conceptos de pr
 - **🎯 Navegación Intuitiva**: Menú dropdown con todos los módulos organizados
 - **📄 Visor de PDF**: Visor integrado en todas las páginas para documentación completa
 - **🚧 Secciones en Construcción**: Indicadores visuales para módulos en desarrollo
-- **🔬 Sección de Investigación**: Propuesta de Investigación Formativa con funcionalidad de descarga Excel
+- **🔬 Sección de Investigación**: Propuesta de Investigación Formativa con funcionalidad de descarga Excel destacada (fondo amarillo, texto negro)
+- **📊 Resultados de Encuestas**: Análisis completo de 100 encuestas sobre la industria de videojuegos en Colombia
 
 ## 📁 Estructura del Proyecto
 
@@ -63,9 +64,10 @@ El proyecto está organizado en 60 páginas que cubren todos los aspectos del de
    - Propuesta de Investigación Formativa: "¿Qué sucede con los videojuegos en Colombia?"
    - Contenido completo con Planteamiento, Objetivos y Metodología
    - Sección dedicada a investigación y análisis de la industria de videojuegos en Colombia
-   - Botón de descarga Excel para datos y reportes
+   - Botón de descarga Excel con estilo destacado (fondo amarillo, texto negro) para datos y reportes
    - Carpeta `investigación/` con archivos Excel
    - Contenido especializado con justificación, antecedentes, problema y metodología completa
+   - Resultados de 100 encuestas realizadas en evento de videojuegos en Bogotá
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -186,18 +188,20 @@ Este proyecto es parte del programa educativo del SENA y está destinado a fines
 ## 📈 Estado del Proyecto
 
 ✅ **Completado**: 29 de 60 módulos (48% de progreso)
-✅ **Investigación**: Contenido completo de Propuesta de Investigación Formativa
+✅ **Investigación**: Contenido completo de Propuesta de Investigación Formativa con resultados de 100 encuestas
 ✅ **Diseño**: Interfaz moderna y responsive con filtros avanzados
 ✅ **Funcionalidad**: Navegación completa, búsqueda y filtros por categoría/progreso
-✅ **Documentación**: README y documentación técnica completa
+✅ **Documentación**: README y documentación técnica completa actualizada
 ✅ **Optimización**: Código limpio y sin errores
 ✅ **Filtros**: Sistema de filtrado por categorías y porcentaje de completado
 ✅ **Progreso**: Barra de progreso general del proyecto actualizada automáticamente
 ✅ **Estilo Unificado**: Títulos y secciones consistentes en todas las páginas
-✅ **Navegación**: Modal del sitemap revisado y verificado en las 60 páginas
+✅ **Navegación**: Menús superiores completos con dropdowns en todas las páginas (32, 33, 37 corregidos)
 ✅ **GitHub Ready**: Todas las rutas verificadas (máximo 204 caracteres, límite 255)
 ✅ **CSS Refactorizado**: Estilos inline convertidos a clases reutilizables (Versión 2.3.0)
 ✅ **Linter Mejorado**: Reducción significativa de advertencias de estilos inline
+✅ **Menús Actualizados**: Páginas 32, 33 y 37 con menús completos de navegación
+✅ **Botón de Descarga Excel**: Estilo mejorado con fondo amarillo y texto negro para mejor visibilidad
 
 ---
 

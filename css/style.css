@@ -16180,3 +16180,30 @@ body {
         padding-left: 1.25rem !important;
     }
 }
+
+/* Estilo para el botón de descargar Excel en la página de Investigación */
+.excel-download-button {
+    background: #FFD700 !important; /* Amarillo */
+    color: #000000 !important; /* Negro */
+    border: 2px solid #FFA500 !important; /* Borde naranja para mejor visibilidad */
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4) !important;
+}
+
+.excel-download-button:hover {
+    background: #FFC700 !important; /* Amarillo más oscuro al hover */
+    color: #000000 !important; /* Mantener texto negro */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(255, 215, 0, 0.6) !important;
+    border-color: #FF8C00 !important;
+}
+
+.excel-download-button:active {
+    background: #FFB700 !important;
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5) !important;
+}
+
+.excel-download-button svg {
+    stroke: #000000 !important; /* Icono negro */
+}

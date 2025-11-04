@@ -75,9 +75,9 @@ Investigación formativa sobre el estado actual, características, desafíos y o
 
 En esta etapa se deben analizar e interpretar los datos recogidos en la fase 2 de ejecución.
 
-### Resultados de la Encuesta - Colombia 4.0 Bogotá
+### Resultados de la Encuesta - Evento de Videojuegos en Bogotá
 
-Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se descubrió que el **73% juega en dispositivos móviles**, el **18% en consola** y el **9% en PC**. Adicionalmente descubrimos que el tiempo promedio semanal es del **8%** y el **40% ha comprado y descargado juegos desarrollados aquí**, y ese mismo porcentaje identifica el reto para la industria en Colombia por la falta de inversión y apoyo del gobierno. Adicionalmente descubrimos una plataforma que apoya a los desarrolladores de videojuegos llamada **"Tan Grande y Jugando"**, y solo el **10% participa en alguna comunidad**. La compra promedio entre los jugadores fue de **$70.000 a $100.000**.
+Se realizaron **100 encuestas** en un evento de videojuegos en Bogotá, donde se descubrió que el **73% juega en dispositivos móviles**, el **18% en consola** y el **9% en PC**. Adicionalmente descubrimos que el tiempo promedio semanal es de **8 horas** y el **40% ha comprado y descargado juegos desarrollados aquí**, y ese mismo porcentaje identifica el reto para la industria en Colombia por la **falta de inversión y apoyo del gobierno**. Adicionalmente descubrimos una plataforma que apoya a los desarrolladores de videojuegos llamada **"Tan Grande y Jugando"**, y solo el **10% participa en alguna comunidad**. La compra promedio entre los jugadores fue de **$70.000 a $100.000**.
 
 ### 📊 Estadísticas Clave
 
@@ -90,7 +90,7 @@ Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se d
 | ⚠️ Reto Principal | **40%** | Identifican falta de inversión y apoyo del gobierno |
 | 👥 Participación en Comunidades | **10%** | Porcentaje que participa en alguna comunidad |
 | 💰 Compra Promedio | **$70.000 - $100.000** | Rango de compra promedio entre jugadores |
-| ⏰ Tiempo Promedio Semanal | **8%** | Tiempo promedio de juego semanal |
+| ⏰ Tiempo Promedio Semanal | **8 horas** | Tiempo promedio de juego semanal |
 
 ### Hallazgos Importantes
 
@@ -110,13 +110,16 @@ Se realizaron **100 encuestas** en el evento Colombia 4.0 en Bogotá, donde se d
 
 Se entrevistaron **10 emprendedores** del sector de videojuegos. Los hallazgos principales fueron:
 
-- **70% (7 de 10)** identificaron la **falta de financiamiento** como el principal obstáculo para llevar sus productos al ámbito global
-- Los emprendedores muestran **esperanza** por el apoyo del **Ministerio de TIC**, que está convirtiendo a **Bogotá en un motor de nuevas tecnologías**, lo que puede incluir esta industria
+- **70% (7 de 10)** identificaron la **falta de financiación** como el principal obstáculo para llevar sus productos al ámbito global
+- Los emprendedores muestran **esperanza** por el apoyo del **Ministerio de TIC**, que está volviendo a **Bogotá un motor en el desarrollo de nuevas tecnologías**, lo que puede incluir esta industria
+- Muchos de ellos aún así tienen esperanza debido a que saben que el Ministerio de TIC está trabajando en convertir a Bogotá en un hub tecnológico
 
 ### 📊 Estadísticas del Mercado Colombiano
 
-- **Mercado en 2024**: El mercado colombiano generó casi **$450 millones** en 2024
-- **Tendencia de crecimiento**: El número de jugadores está aumentando significativamente
+- **Mercado en 2024**: El mercado colombiano generó cerca de **$450 millones de dólares** en 2024
+- **Tendencia de crecimiento**: El número de gamers va en aumento significativamente
+- **Estimación de jugadores**: Se estiman **10 millones de jugadores activos** en múltiples plataformas
+- **Empresas desarrolladoras**: Se estiman aproximadamente **80 empresas desarrollando videojuegos en Colombia** (aunque tienen poca visibilidad)
 
 ### 🎮 Preferencias y Hábitos de Consumo
 
@@ -127,11 +130,14 @@ Se entrevistaron **10 emprendedores** del sector de videojuegos. Los hallazgos p
 
 ### Conclusiones Principales
 
-1. **Mercado móvil dominante**: El 73% juega en móviles, indicando una fuerte tendencia hacia el gaming móvil
-2. **Oportunidad de mercado**: El mercado colombiano creció a $450M en 2024 y sigue en expansión
-3. **Modelo Freemium exitoso**: 71% prefiere Freemium y 81% realiza compras in-game
-4. **Desafío de financiamiento**: 70% de emprendedores necesita apoyo financiero para internacionalización
-5. **Apoyo gubernamental**: Esperanza en el apoyo del Ministerio de TIC a Bogotá como hub tecnológico
+1. **Mercado móvil dominante**: El 73% juega en móviles, indicando una fuerte tendencia hacia el gaming móvil en Colombia
+2. **Oportunidad de mercado**: El mercado colombiano generó cerca de $450 millones de dólares en 2024 y el número de gamers va en aumento
+3. **Modelo Freemium exitoso**: 71% prefiere juegos Freemium (por razones obvias) y 81% realiza compras dentro de los juegos
+4. **Desafío de financiación**: 70% de emprendedores (7 de 10) identifica la falta de financiación como el principal obstáculo para internacionalización
+5. **Apoyo gubernamental**: Esperanza en el apoyo del Ministerio de TIC que está volviendo a Bogotá un motor en el desarrollo de nuevas tecnologías
+6. **Industria en crecimiento**: La industria muestra un "Crecimiento" gracias a los miles de juegos en teléfonos y nuevas tecnologías digitales
+7. **Visibilidad limitada**: Aunque hay aproximadamente 80 empresas desarrollando videojuegos en Colombia, tienen poca visibilidad
+8. **Potencial de consolidación**: Colombia tiene potencial en la región para consolidarse si se superan los retos y se forma algo más colaborativo entre el estado, desarrolladoras, academia y sector privado
 
 ---
 ## 🎨 Estilos CSS
@@ -141,6 +147,7 @@ La página de investigación utiliza estilos CSS personalizados incluidos en `cs
 - `.investigation-table`: Tablas con bordes visibles y efectos hover
 - `.investigation-questions-list`: Listas numeradas estilizadas con tarjetas
 - `.survey-link-container`: Contenedor destacado para el enlace de la encuesta
+- `.excel-download-button`: Botón de descarga Excel con fondo amarillo (#FFD700) y texto negro para máxima visibilidad
 
 ## 👤 Autor
 
