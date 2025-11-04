@@ -2,7 +2,7 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto forma parte del programa de **Análisis y Desarrollo de Software** del SENA, desarrollado por **Lyam Acosta Forero**. Consiste en la creación de un videojuego que combina el aprendizaje de programación con mecánicas de juego, diseñado específicamente para estudiantes del SENA y la comunidad educativa.
+Este proyecto forma parte del programa de **Análisis y Desarrollo de Software** del SENA, desarrollado por **Lyam Acosta Forero**. Consiste en la creación de un videojuego 2D estilo pixel art.
 
 ## 🎯 Objetivo
 
