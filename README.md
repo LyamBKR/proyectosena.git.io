@@ -6,7 +6,7 @@ Este proyecto forma parte del programa de **Análisis y Desarrollo de Software**
 
 ## 🎯 Objetivo
 
-Desarrollar un videojuego que permita a los estudiantes aprender conceptos de programación de manera interactiva y divertida, utilizando un estilo visual pixel art retro que mantenga el interés y la motivación del usuario.
+Desarrollar un videojuego, utilizando un estilo visual pixel art retro que mantenga el interés y la motivación del usuario.
 
 ## 🚀 Características Principales
 
