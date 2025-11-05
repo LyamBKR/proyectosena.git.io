@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     
 </head>
 <body>
@@ -21,16 +22,35 @@
             </div>
             <h1 class="epic-title">30. Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</h1>
             <p class="epic-subtitle">Proyecto SENA - Análisis y desarrollo de software | <strong>Desarrollador: Lyam Acosta Forero</strong></p>
-            <a href="#manual" class="pdf-viewer-button">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
-                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                    <polyline points="10 9 9 9 8 9"></polyline>
-                </svg>
-                VER PDF
-            </a>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1rem;">
+                <a href="#manual" class="pdf-viewer-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    VER PDF
+                </a>
+                <button onclick="downloadPrototipoZip(event)" class="pdf-viewer-button" style="display: inline-flex; align-items: center; gap: 0.5rem; border: 2px solid #FFA500 !important; cursor: pointer;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>DESCARGAR PROTOTIPO</span>
+                </button>
+                <a href="prototipo/index.html" target="_blank" class="pdf-viewer-button" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <span style="font-size: 1.5rem;">🚀</span>
+                    <span>PROBAR PROTOTIPO FUNCIONAL</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
         </div>
 
         <!-- Navigation -->
@@ -318,53 +338,671 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="content-container">
-                <!-- Construction Message Section -->
+                <!-- Introducción -->
                 <section class="content-section">
                     <div class="section-header">
-                        <h2 class="section-title">🚧 Página en Construcción</h2>
-                        <div class="project-highlight">
-                            <div class="highlight-icon">🚧</div>
-                            <div class="highlight-content">
-                                <p><span style="color: #000000;">Esta página está siendo desarrollada y estará disponible próximamente</span></p>
-                            </div>
-                        </div>
+                        <h2 class="section-title">🎨 Elaborar el Prototipo Navegable del Software</h2>
                     </div>
                     <div class="section-content">
-                        <div class="intro-content">
-                            <div class="intro-text">
-                                <p>El contenido de <strong>Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</strong> se encuentra en desarrollo y será agregado próximamente.</p>
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <h3>Prototipo Funcional con JavaScript</h3>
+                                <p>Esta sección se enfoca en la elaboración de un prototipo navegable funcional utilizando JavaScript, estableciendo los fundamentos de diseño, colores y componentes que serán utilizados en el sistema del videojuego "Juego Secreto".</p>
                                 
-                                <p>Esta sección formará parte del proyecto de desarrollo de software del videojuego "Juego Secreto" y seguirá las mejores prácticas de la industria.</p>
-                                
-                                <p>Mientras tanto, puedes explorar otras secciones del proyecto que ya están disponibles.</p>
+                                <div class="intro-features" style="margin-top: 1.5rem;">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🔐</div>
+                                        <div class="feature-text">Autenticación</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">📝</div>
+                                        <div class="feature-text">Registro de Usuario</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">⚠️</div>
+                                        <div class="feature-text">Manejo de Errores</div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">🎨</div>
+                                        <div class="feature-text">Paleta de Colores</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- Coming Soon Section -->
+                <!-- Sección 1 - Taller -->
                 <section class="content-section">
                     <div class="section-header">
-                        <h2 class="section-title">Próximamente</h2>
+                        <h2 class="section-title">📋 Sección 1 - Taller (Prototipo funcional JavaScript)</h2>
                     </div>
                     <div class="section-content">
-                        <div class="objectives-list">
-                            <div class="objective-item">
-                                <h3>Contenido Especializado</h3>
-                                <p>Información detallada y específica sobre Elaborar el prototipo navegable del software aplicando estándares de usabilidad y accesibilidad</p>
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <p>Se desea elaborar un diagrama de funcionalidad, estableciendo colores y componentes a utilizar, basándose en el siguiente conjunto de funcionalidades relacionadas con el sistema de gestión de usuarios del videojuego:</p>
                             </div>
-                            <div class="objective-item">
-                                <h3>Documentación Técnica</h3>
-                                <p>Guías y recursos técnicos relacionados con esta área del proyecto</p>
+                        </div>
+
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(0, 120, 242, 0.1); border-left: 4px solid var(--primary-color); border-radius: var(--border-radius-md);">
+                            <p style="margin: 0; font-size: 1.05rem; font-weight: 500;">Nota Importante:</p>
+                            <p style="margin: 0.5rem 0 0 0; font-style: italic; font-size: 1.05rem;">Todas las funcionalidades deben desarrollarse según el <span style="color: #dc3545; font-weight: 600;">diagrama de navegación del proyecto propuesto</span>, el cual define el flujo de interacción del usuario dentro del sistema.</p>
+                        </div>
+
+                        <!-- Funcionalidades -->
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon">🔐</div>
+                                <div class="phase-content">
+                                    <h3>1. Pantalla de Autenticación</h3>
+                                    <p>Se desea elaborar una pantalla que permita validar la autenticidad de un usuario <span style="color: #dc3545; font-weight: 600;">(Según diagrama de navegación proyecto propuesto)</span>.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Funcionalidades requeridas:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Campo de usuario o email</li>
+                                                <li>Campo de contraseña</li>
+                                                <li>Validación de credenciales</li>
+                                                <li>Enlace para recuperación de contraseña</li>
+                                                <li>Integración con el sistema de usuarios del videojuego</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="objective-item">
-                                <h3>Ejemplos Prácticos</h3>
-                                <p>Casos de uso y ejemplos aplicados al desarrollo del videojuego</p>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">📝</div>
+                                <div class="phase-content">
+                                    <h3>2. Pantalla de Registro de Usuario</h3>
+                                    <p>Se desea elaborar una pantalla que permita ingresar nombres, apellidos, cédula, fecha de nacimiento de un usuario <span style="color: #dc3545; font-weight: 600;">(Según diagrama de navegación proyecto propuesto)</span>.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Campos requeridos:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Nombres (obligatorio)</li>
+                                                <li>Apellidos (obligatorio)</li>
+                                                <li>Cédula/Número de identificación (obligatorio, único)</li>
+                                                <li>Fecha de nacimiento (obligatorio, validación de edad)</li>
+                                                <li>Email (opcional, para notificaciones)</li>
+                                                <li>Validación de datos antes de guardar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="objective-item">
-                                <h3>Recursos Adicionales</h3>
-                                <p>Enlaces, herramientas y materiales de apoyo para el aprendizaje</p>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">⚠️</div>
+                                <div class="phase-content">
+                                    <h3>3. Pantalla de Manejo de Errores</h3>
+                                    <p>Se desea dibujar una pantalla en donde se informe de posibles errores a un usuario.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Tipos de errores a manejar:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Errores de autenticación (credenciales incorrectas)</li>
+                                                <li>Errores de validación (campos incompletos o inválidos)</li>
+                                                <li>Errores de conexión (problemas de red)</li>
+                                                <li>Errores de servidor (errores 500, 503)</li>
+                                                <li>Mensajes claros y amigables para el usuario</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">🎨</div>
+                                <div class="phase-content">
+                                    <h3>4. Propuesta de Paleta de Colores</h3>
+                                    <p>Proponer la paleta de colores de los componentes anteriores utilizando como máximo la combinación de tres colores <span style="color: #dc3545; font-weight: 600;">(Según diagrama de navegación proyecto propuesto)</span>.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Consideraciones para la paleta:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Máximo 3 colores principales</li>
+                                                <li>Contraste adecuado para accesibilidad</li>
+                                                <li>Coherencia con el estilo pixel art del videojuego</li>
+                                                <li>Colores que representen estados (éxito, error, advertencia)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Flujo de Navegación -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🔄 Flujo de Navegación del Sistema</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <p>El diagrama de navegación del proyecto define el flujo de interacción entre las diferentes pantallas del sistema de gestión de usuarios:</p>
+                            </div>
+                        </div>
+
+                        <div class="processes-grid" style="margin-top: 2rem;">
+                            <div class="process-card">
+                                <div class="process-icon">🏠</div>
+                                <div class="process-content">
+                                    <h3>Punto de Entrada</h3>
+                                    <p>Pantalla inicial del sistema</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Opciones disponibles:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Iniciar sesión</li>
+                                                <li>Registrarse como nuevo usuario</li>
+                                                <li>Acceso como invitado (si aplica)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">🔐</div>
+                                <div class="process-content">
+                                    <h3>Autenticación</h3>
+                                    <p>Validación de credenciales de usuario</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Flujos posibles:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Autenticación exitosa → Dashboard del juego</li>
+                                                <li>Autenticación fallida → Pantalla de error</li>
+                                                <li>Usuario no registrado → Pantalla de registro</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">📝</div>
+                                <div class="process-content">
+                                    <h3>Registro</h3>
+                                    <p>Creación de nueva cuenta de usuario</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Flujos posibles:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Registro exitoso → Autenticación automática</li>
+                                                <li>Datos inválidos → Pantalla de error con detalles</li>
+                                                <li>Usuario ya existe → Pantalla de error específica</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="process-icon">⚠️</div>
+                                <div class="process-content">
+                                    <h3>Manejo de Errores</h3>
+                                    <p>Sistema de notificación de errores</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md);">
+                                            <strong>Opciones disponibles:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Reintentar la operación</li>
+                                                <li>Volver a la pantalla anterior</li>
+                                                <li>Contactar con soporte</li>
+                                                <li>Regresar al inicio</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Propuesta de Paleta de Colores -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🎨 Propuesta de Paleta de Colores</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <p>La paleta de colores propuesta para el prototipo navegable del sistema de gestión de usuarios del videojuego "Juego Secreto" está diseñada para mantener coherencia con el estilo pixel art y proporcionar una excelente experiencia de usuario:</p>
+                            </div>
+                        </div>
+
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #2E7D32; color: white;">🟢</div>
+                                <div class="phase-content">
+                                    <h3>Color Primario: Verde Esmeralda</h3>
+                                    <p><strong>Código HEX:</strong> #2E7D32</p>
+                                    <p><strong>Uso:</strong> Botones principales, enlaces activos, elementos de navegación, indicadores de éxito.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(46, 125, 50, 0.2); border-radius: var(--border-radius-md);">
+                                            <strong>Variantes:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Claro: #4CAF50 (hover states)</li>
+                                                <li>Oscuro: #1B5E20 (bordes, sombras)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #1976D2; color: white;">🔵</div>
+                                <div class="phase-content">
+                                    <h3>Color Secundario: Azul Profundo</h3>
+                                    <p><strong>Código HEX:</strong> #1976D2</p>
+                                    <p><strong>Uso:</strong> Fondos de secciones, elementos informativos, campos de formulario, estados de carga.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(25, 118, 210, 0.2); border-radius: var(--border-radius-md);">
+                                            <strong>Variantes:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Claro: #42A5F5 (fondos ligeros)</li>
+                                                <li>Oscuro: #0D47A1 (textos sobre fondos claros)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #F57C00; color: white;">🟠</div>
+                                <div class="phase-content">
+                                    <h3>Color Terciario: Naranja Alerta</h3>
+                                    <p><strong>Código HEX:</strong> #F57C00</p>
+                                    <p><strong>Uso:</strong> Mensajes de advertencia, botones de acción secundaria, elementos destacados, estados de atención.</p>
+                                    <div class="process-details" style="margin-top: 1rem;">
+                                        <div style="padding: 0.75rem; background: rgba(245, 124, 0, 0.2); border-radius: var(--border-radius-md);">
+                                            <strong>Variantes:</strong>
+                                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                                <li>Claro: #FF9800 (hover states)</li>
+                                                <li>Oscuro: #E65100 (bordes, sombras)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tabla de Uso de Colores -->
+                        <div class="relationships-section" style="margin-top: 2rem;">
+                            <h4>Distribución de Colores por Componente</h4>
+                            <div class="relationships-table-container">
+                                <table class="relationships-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Componente</th>
+                                            <th>Color Principal</th>
+                                            <th>Color Secundario</th>
+                                            <th>Color de Acento</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Pantalla de Autenticación</strong></td>
+                                            <td>Azul Profundo (#1976D2) - Fondo</td>
+                                            <td>Verde Esmeralda (#2E7D32) - Botón Login</td>
+                                            <td>Naranja Alerta (#F57C00) - Enlaces</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Pantalla de Registro</strong></td>
+                                            <td>Azul Profundo (#1976D2) - Fondo</td>
+                                            <td>Verde Esmeralda (#2E7D32) - Botón Registrar</td>
+                                            <td>Naranja Alerta (#F57C00) - Campos requeridos</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Pantalla de Errores</strong></td>
+                                            <td>Naranja Alerta (#F57C00) - Fondo de alerta</td>
+                                            <td>Azul Profundo (#1976D2) - Texto informativo</td>
+                                            <td>Verde Esmeralda (#2E7D32) - Botón de acción</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Elementos de Navegación</strong></td>
+                                            <td>Verde Esmeralda (#2E7D32) - Enlaces activos</td>
+                                            <td>Azul Profundo (#1976D2) - Enlaces inactivos</td>
+                                            <td>Naranja Alerta (#F57C00) - Badges y notificaciones</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(0, 120, 242, 0.1); border-left: 4px solid var(--primary-color); border-radius: var(--border-radius-md);">
+                            <p style="margin: 0; font-size: 1.05rem; font-weight: 500;">Consideraciones de Accesibilidad:</p>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                <li>Contraste mínimo de 4.5:1 para texto normal</li>
+                                <li>Contraste mínimo de 3:1 para texto grande</li>
+                                <li>Los colores no son el único medio para transmitir información</li>
+                                <li>Compatibilidad con modo oscuro y alto contraste</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Componentes y Estándares -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🧩 Componentes y Estándares de Usabilidad</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <p>Los componentes del prototipo deben seguir estándares de usabilidad y accesibilidad para garantizar una experiencia óptima para todos los usuarios:</p>
+                            </div>
+                        </div>
+
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon">⌨️</div>
+                                <div class="phase-content">
+                                    <h3>Navegación por Teclado</h3>
+                                    <p>Todos los elementos interactivos deben ser accesibles mediante teclado (Tab, Enter, Espacio).</p>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">🔍</div>
+                                <div class="phase-content">
+                                    <h3>Lectores de Pantalla</h3>
+                                    <p>Etiquetas ARIA y atributos alt para elementos visuales.</p>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">📱</div>
+                                <div class="phase-content">
+                                    <h3>Diseño Responsive</h3>
+                                    <p>Adaptación a diferentes tamaños de pantalla (móvil, tablet, desktop).</p>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">⚡</div>
+                                <div class="phase-content">
+                                    <h3>Feedback Visual</h3>
+                                    <p>Estados hover, active y focus claramente definidos para todos los elementos interactivos.</p>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">✅</div>
+                                <div class="phase-content">
+                                    <h3>Validación en Tiempo Real</h3>
+                                    <p>Mensajes de validación inmediatos al completar campos de formulario.</p>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon">🔄</div>
+                                <div class="phase-content">
+                                    <h3>Estados de Carga</h3>
+                                    <p>Indicadores visuales durante procesos asíncronos (autenticación, registro).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Botón Home - Implementación y CSS -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">🏠 Botón Home - Implementación y CSS</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="intro-highlight">
+                            <div class="intro-content">
+                                <h3>Descripción del Componente</h3>
+                                <p>El botón "Home" permite a los usuarios regresar rápidamente al índice principal del proyecto desde el prototipo navegable. Este componente está diseñado siguiendo los principios de accesibilidad y usabilidad, utilizando CSS inline para mantener la consistencia visual con el resto del prototipo.</p>
+                            </div>
+                        </div>
+
+                        <!-- Código HTML Completo -->
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(0, 120, 242, 0.1); border-left: 4px solid var(--primary-color); border-radius: var(--border-radius-md);">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 600;">📝 Código HTML Completo del Botón Home</h4>
+                            <pre style="background: rgba(0, 0, 0, 0.3); padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 0; line-height: 1.6;"><code style="color: #e0e0e0; font-family: 'Courier New', monospace; font-size: 0.9rem;">&lt;a href="/index.html" 
+   class="btn-text" 
+   style="background: #1976D2; 
+          color: white; 
+          border: 2px solid #1565C0; 
+          text-decoration: none; 
+          display: inline-flex; 
+          align-items: center; 
+          justify-content: center; 
+          padding: 12px 24px; 
+          border-radius: 8px; 
+          font-weight: 600; 
+          transition: all 0.3s ease; 
+          box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);" 
+   onmouseover="this.style.background='#1565C0'; 
+                this.style.transform='translateY(-2px)'; 
+                this.style.boxShadow='0 6px 16px rgba(25, 118, 210, 0.4)';" 
+   onmouseout="this.style.background='#1976D2'; 
+               this.style.transform='translateY(0)'; 
+               this.style.boxShadow='0 4px 12px rgba(25, 118, 210, 0.3)';"&gt;
+    🏠 Home
+&lt;/a&gt;</code></pre>
+                        </div>
+
+                        <!-- Explicación Línea por Línea -->
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(247, 201, 72, 0.15); border-left: 4px solid #f7c948; border-radius: var(--border-radius-md);">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 600;">🔍 Explicación Línea por Línea del Código</h4>
+                            
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">1. Etiqueta de Apertura y Atributos Principales</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">&lt;a href="/index.html" class="btn-text"&gt;</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>&lt;a&gt;</strong> - Elemento de anclaje HTML5, semánticamente correcto para navegación</li>
+                                    <li><strong>href="/index.html"</strong> - Ruta absoluta al índice principal del proyecto. La barra inicial (/) indica la raíz del sitio</li>
+                                    <li><strong>class="btn-text"</strong> - Clase CSS que puede tener estilos base definidos en el archivo styles.css</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">2. Estilos CSS Inline - Propiedades de Color y Fondo</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">style="background: #1976D2; 
+       color: white; 
+       border: 2px solid #1565C0;"</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>background: #1976D2</strong> - Fondo azul Material Design Blue 700. Este color es el estado normal del botón</li>
+                                    <li><strong>color: white</strong> - Color del texto en blanco (#FFFFFF) para máximo contraste sobre el fondo azul</li>
+                                    <li><strong>border: 2px solid #1565C0</strong> - Borde sólido de 2 píxeles en azul más oscuro (Blue 800) para definir mejor el botón</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">3. Estilos CSS - Layout y Display</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">text-decoration: none; 
+display: inline-flex; 
+align-items: center; 
+justify-content: center;</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>text-decoration: none</strong> - Elimina el subrayado predeterminado de los enlaces</li>
+                                    <li><strong>display: inline-flex</strong> - Combina inline (permite estar en línea con otros elementos) y flexbox (permite alineación flexible)</li>
+                                    <li><strong>align-items: center</strong> - Alinea verticalmente el contenido (icono y texto) al centro del contenedor flex</li>
+                                    <li><strong>justify-content: center</strong> - Alinea horizontalmente el contenido al centro del contenedor flex</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">4. Estilos CSS - Espaciado y Dimensiones</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">padding: 12px 24px; 
+border-radius: 8px; 
+font-weight: 600;</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>padding: 12px 24px</strong> - Espaciado interno: 12px arriba/abajo, 24px izquierda/derecha. Esto crea un área de clic cómoda y cumple con estándares de accesibilidad (mínimo 44x44px)</li>
+                                    <li><strong>border-radius: 8px</strong> - Bordes redondeados de 8 píxeles para un diseño moderno y suave</li>
+                                    <li><strong>font-weight: 600</strong> - Peso de fuente semi-negrita (600) para mejor legibilidad y jerarquía visual</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">5. Estilos CSS - Efectos y Transiciones</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">transition: all 0.3s ease; 
+box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>transition: all 0.3s ease</strong> - Transición suave de 0.3 segundos para todas las propiedades CSS que cambien. "ease" crea una curva de animación natural (lento-rápido-lento)</li>
+                                    <li><strong>box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3)</strong> - Sombra del botón:
+                                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                                            <li><strong>0</strong> - Desplazamiento horizontal (sin desplazamiento)</li>
+                                            <li><strong>4px</strong> - Desplazamiento vertical hacia abajo</li>
+                                            <li><strong>12px</strong> - Radio de difuminado (blur)</li>
+                                            <li><strong>rgba(25, 118, 210, 0.3)</strong> - Color azul con 30% de opacidad</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">6. Evento onmouseover - Estado Hover</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">onmouseover="this.style.background='#1565C0'; 
+                this.style.transform='translateY(-2px)'; 
+                this.style.boxShadow='0 6px 16px rgba(25, 118, 210, 0.4)';"</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>onmouseover</strong> - Evento JavaScript que se ejecuta cuando el cursor del mouse entra en el área del botón</li>
+                                    <li><strong>this.style.background='#1565C0'</strong> - Cambia el fondo a un azul más oscuro (Blue 800) para indicar interactividad</li>
+                                    <li><strong>this.style.transform='translateY(-2px)'</strong> - Mueve el botón 2 píxeles hacia arriba, creando efecto de "elevación"</li>
+                                    <li><strong>this.style.boxShadow='0 6px 16px rgba(25, 118, 210, 0.4)'</strong> - Aumenta la sombra (6px desplazamiento, 16px blur, 40% opacidad) para efecto 3D más pronunciado</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">7. Evento onmouseout - Restaurar Estado Normal</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">onmouseout="this.style.background='#1976D2'; 
+               this.style.transform='translateY(0)'; 
+               this.style.boxShadow='0 4px 12px rgba(25, 118, 210, 0.3)';"</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>onmouseout</strong> - Evento JavaScript que se ejecuta cuando el cursor sale del área del botón</li>
+                                    <li><strong>this.style.background='#1976D2'</strong> - Restaura el color de fondo original (Blue 700)</li>
+                                    <li><strong>this.style.transform='translateY(0)'</strong> - Devuelve el botón a su posición original (sin desplazamiento vertical)</li>
+                                    <li><strong>this.style.boxShadow='0 4px 12px rgba(25, 118, 210, 0.3)'</strong> - Restaura la sombra original del estado normal</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: 1.5rem;">
+                                <h5 style="color: var(--text-primary); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">8. Contenido y Cierre de la Etiqueta</h5>
+                                <pre style="background: rgba(0, 0, 0, 0.2); padding: 0.75rem; border-radius: 6px; margin: 0.5rem 0; overflow-x: auto;"><code style="color: #4CAF50; font-family: 'Courier New', monospace; font-size: 0.85rem;">🏠 Home
+&lt;/a&gt;</code></pre>
+                                <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                                    <li><strong>🏠</strong> - Emoji de casa (Unicode U+1F3E0) que mejora la identificación visual del botón y proporciona contexto inmediato</li>
+                                    <li><strong>Home</strong> - Texto descriptivo que indica claramente la función del botón</li>
+                                    <li><strong>&lt;/a&gt;</strong> - Cierre de la etiqueta de anclaje, finalizando el elemento</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Explicación del CSS -->
+                        <div class="phases-grid" style="margin-top: 2rem;">
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #1976D2; color: white;">🎨</div>
+                                <div class="phase-content">
+                                    <h3>Colores y Estilos Base</h3>
+                                    <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                                        <p><strong>background: #1976D2</strong> - Color azul principal del botón (Material Design Blue 700)</p>
+                                        <p><strong>color: white</strong> - Texto blanco para contraste óptimo</p>
+                                        <p><strong>border: 2px solid #1565C0</strong> - Borde azul más oscuro para definición</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #2E7D32; color: white;">📐</div>
+                                <div class="phase-content">
+                                    <h3>Layout y Espaciado</h3>
+                                    <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                                        <p><strong>display: inline-flex</strong> - Permite alinear contenido horizontalmente</p>
+                                        <p><strong>align-items: center</strong> - Centra verticalmente el contenido</p>
+                                        <p><strong>justify-content: center</strong> - Centra horizontalmente el contenido</p>
+                                        <p><strong>padding: 12px 24px</strong> - Espaciado interno (12px vertical, 24px horizontal)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #F57C00; color: white;">✨</div>
+                                <div class="phase-content">
+                                    <h3>Efectos Visuales</h3>
+                                    <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                                        <p><strong>border-radius: 8px</strong> - Bordes redondeados para modernidad</p>
+                                        <p><strong>box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3)</strong> - Sombra suave para profundidad</p>
+                                        <p><strong>transition: all 0.3s ease</strong> - Transición suave de 0.3 segundos</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="phase-card">
+                                <div class="phase-icon" style="background: #8B5CF6; color: white;">🖱️</div>
+                                <div class="phase-content">
+                                    <h3>Estados Interactivos (Hover)</h3>
+                                    <div style="padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                                        <p><strong>onmouseover</strong> - Al pasar el mouse:</p>
+                                        <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                            <li>background: #1565C0 (azul más oscuro)</li>
+                                            <li>transform: translateY(-2px) (elevación)</li>
+                                            <li>box-shadow aumentado para efecto 3D</li>
+                                        </ul>
+                                        <p style="margin-top: 0.5rem;"><strong>onmouseout</strong> - Al quitar el mouse: restaura valores originales</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Explicación de Accesibilidad -->
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(0, 120, 242, 0.1); border-left: 4px solid var(--primary-color); border-radius: var(--border-radius-md);">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 600;">♿ Características de Accesibilidad</h4>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                <li><strong>Contraste de color:</strong> El texto blanco sobre fondo azul (#1976D2) proporciona un ratio de contraste de 4.5:1, cumpliendo con WCAG AA</li>
+                                <li><strong>Área de clic:</strong> El padding de 12px 24px asegura un área táctil mínima de 44x44px recomendada</li>
+                                <li><strong>Feedback visual:</strong> Los estados hover proporcionan retroalimentación clara al usuario</li>
+                                <li><strong>Navegación por teclado:</strong> Como elemento &lt;a&gt;, es accesible mediante Tab y Enter</li>
+                                <li><strong>Semántica HTML:</strong> El uso de enlace (&lt;a&gt;) es semánticamente correcto para navegación</li>
+                            </ul>
+                        </div>
+
+                        <!-- Paleta de Colores del Botón -->
+                        <div style="margin-top: 2rem;">
+                            <h4 style="margin: 0 0 1.5rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 600; text-align: center;">🎨 Paleta de Colores del Botón Home</h4>
+                            <div class="phases-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                                <div class="phase-card" style="background: rgba(25, 118, 210, 0.2); border-left: 4px solid #1976D2;">
+                                    <div class="phase-icon" style="font-size: 2rem; background: #1976D2; color: white;">🔵</div>
+                                    <div class="phase-content">
+                                        <h3 style="color: #1976D2; font-size: 1rem; margin: 0.5rem 0;">#1976D2</h3>
+                                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Color Principal (Estado Normal)</p>
+                                    </div>
+                                </div>
+                                <div class="phase-card" style="background: rgba(21, 101, 192, 0.2); border-left: 4px solid #1565C0;">
+                                    <div class="phase-icon" style="font-size: 2rem; background: #1565C0; color: white;">🔷</div>
+                                    <div class="phase-content">
+                                        <h3 style="color: #1565C0; font-size: 1rem; margin: 0.5rem 0;">#1565C0</h3>
+                                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Color Hover (Estado Interactivo)</p>
+                                    </div>
+                                </div>
+                                <div class="phase-card" style="background: rgba(255, 255, 255, 0.2); border-left: 4px solid #ffffff;">
+                                    <div class="phase-icon" style="font-size: 2rem; background: #ffffff; color: #1976D2;">⚪</div>
+                                    <div class="phase-content">
+                                        <h3 style="color: #ffffff; font-size: 1rem; margin: 0.5rem 0;">#FFFFFF</h3>
+                                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Color del Texto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Consideraciones de Diseño -->
+                        <div class="quote-highlight" style="margin-top: 2rem; padding: 1.5rem; background: rgba(247, 201, 72, 0.15); border-left: 4px solid #f7c948; border-radius: var(--border-radius-md);">
+                            <h4 style="margin: 0 0 1rem 0; color: var(--text-primary); font-size: 1.2rem; font-weight: 600;">💡 Consideraciones de Diseño</h4>
+                            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                                <li>El botón utiliza CSS inline para mantener la independencia del prototipo</li>
+                                <li>El color azul (#1976D2) coincide con el color secundario de la paleta del prototipo</li>
+                                <li>Los efectos hover proporcionan feedback visual inmediato sin necesidad de JavaScript adicional</li>
+                                <li>La ruta "/index.html" permite navegar desde cualquier subdirectorio al índice principal</li>
+                                <li>El emoji 🏠 mejora la identificación visual del botón sin depender solo del texto</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -433,6 +1071,72 @@
 
     <!-- JavaScript -->
     <script src="../js/script.js"></script>
+    
+    <script>
+        async function downloadPrototipoZip(event) {
+            try {
+                // Mostrar indicador de carga
+                const button = event ? event.target.closest('button') : document.querySelector('button[onclick*="downloadPrototipoZip"]');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<span>⏳ Generando ZIP...</span>';
+                button.disabled = true;
+                
+                // Crear instancia de JSZip
+                const zip = new JSZip();
+                
+                // Lista de archivos a descargar
+                const archivos = [
+                    'prototipo/index.html',
+                    'prototipo/app.js',
+                    'prototipo/styles.css',
+                    'prototipo/README.md'
+                ];
+                
+                // Descargar cada archivo y agregarlo al zip
+                const promesas = archivos.map(async (archivo) => {
+                    try {
+                        const response = await fetch(archivo);
+                        if (!response.ok) {
+                            console.warn(`No se pudo descargar ${archivo}`);
+                            return;
+                        }
+                        const contenido = await response.text();
+                        const nombreArchivo = archivo.replace('prototipo/', '');
+                        zip.file(nombreArchivo, contenido);
+                    } catch (error) {
+                        console.error(`Error al descargar ${archivo}:`, error);
+                    }
+                });
+                
+                await Promise.all(promesas);
+                
+                // Generar el archivo ZIP
+                const blob = await zip.generateAsync({ type: 'blob' });
+                
+                // Crear enlace de descarga
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'prototipo.zip';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                // Restaurar botón
+                button.innerHTML = originalText;
+                button.disabled = false;
+            } catch (error) {
+                console.error('Error al crear el ZIP:', error);
+                alert('Error al descargar el prototipo. Por favor, inténtalo de nuevo.');
+                const button = event ? event.target.closest('button') : document.querySelector('button[onclick*="downloadPrototipoZip"]');
+                if (button) {
+                    button.disabled = false;
+                    button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg><span>DESCARGAR PROTOTIPO</span>';
+                }
+            }
+        }
+    </script>
 
     <!-- Sitemap Modal -->
     <div class="sitemap-modal" id="sitemapModal">

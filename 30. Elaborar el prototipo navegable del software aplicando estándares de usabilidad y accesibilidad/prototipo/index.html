@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Funcional - Sistema de Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pantalla Principal / Inicio -->
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">🎮 </h1>
+                <p class="subtitle">Explorador iniciamos</p>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="showScreen('login-screen')" aria-label="Iniciar sesión">
+                    🔐 Acceder a mi zona
+                </button>
+                <button class="btn btn-secondary" onclick="showScreen('register-screen')" aria-label="Registrarse">
+                    📝 Programa obligatorio de registro de exploradores confirmados (Crear usuario)
+                </button>
+                <button class="btn btn-tertiary" onclick="showScreen('closed-program-screen')" aria-label="Continuar como invitado">
+                    👤 Programa de pruebas de ingreso (Invitado)
+                </button>
+                <a href="/index.html" class="btn-text" style="background: #1976D2; color: white; border: 2px solid #1565C0; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);" onmouseover="this.style.background='#1565C0'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(25, 118, 210, 0.4)';" onmouseout="this.style.background='#1976D2'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(25, 118, 210, 0.3)';">
+                    🏠 Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Autenticación -->
+    <div id="login-screen" class="screen">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>🔐 ¿Ya exploraste el mundo?</h2>
+                    <p>Ingresa a tu aventura y continuala</p>
+                </div>
+                
+                <form id="login-form" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">Ingresa la llave de tu mundo (Email)</label>
+                        <input 
+                            type="text" 
+                            id="login-email" 
+                            name="email" 
+                            required 
+                            autocomplete="username"
+                            aria-describedby="login-email-error"
+                            placeholder="usuario@ejemplo.com">
+                        <span id="login-email-error" class="error-message" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password">¿Contraseña entregada por los dioses?</label>
+                        <input 
+                            type="password" 
+                            id="login-password" 
+                            name="password" 
+                            required 
+                            autocomplete="current-password"
+                            aria-describedby="login-password-error"
+                            placeholder="••••••••">
+                        <span id="login-password-error" class="error-message" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <a href="#" onclick="showError('login-error', 'Funcionalidad en desarrollo'); return false;" class="link">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Iniciar Sesión
+                    </button>
+                    
+                    <div class="form-footer">
+                        <p>¿No tienes cuenta? <a href="#" onclick="showScreen('register-screen'); return false;" class="link">Regístrate aquí</a></p>
+                    </div>
+                </form>
+                
+                <button class="btn btn-text" onclick="showScreen('home-screen')">
+                    ← Volver al inicio
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Registro -->
+    <div id="register-screen" class="screen">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>📝 Registro</h2>
+                    <p>Vamos a jugar, Pero primero necesitamos tus datos</p>
+                </div>
+                
+                <form id="register-form" onsubmit="handleRegister(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="registrar-nombres">Nombres del nuevo</label>
+                            <input 
+                                type="text" 
+                                id="registrar-nombres" 
+                                name="nombres" 
+                                required 
+                                autocomplete="given-name"
+                                aria-describedby="registrar-nombres-error"
+                                placeholder="Juan">
+                            <span id="registrar-nombres-error" class="error-message" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registrar-apellidos">Apellidos del nuevo</label>
+                            <input 
+                                type="text" 
+                                id="registrar-apellidos" 
+                                name="apellidos" 
+                                required 
+                                autocomplete="family-name"
+                                aria-describedby="registrar-apellidos-error"
+                                placeholder="Pérez">
+                            <span id="registrar-apellidos-error" class="error-message" role="alert"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registrar-key">Invitación a nuestro Mundo</label>
+                        <input 
+                            type="text" 
+                            id="registrar-key" 
+                            name="codigo" 
+                            required 
+                            pattern="[0-9]{6,12}"
+                            aria-describedby="registrar-codigo-error"
+                            placeholder="Key de compra">
+                        <span id="registrar-key-error" class="error-message" role="alert"></span>
+                        <small class="form-hint">Cuando te conectaste con los dioses, te llego a un codigo a tu intercomunicador</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registrar-fecha-nacimiento">¿Cuando te crearon explorador?</label>
+                        <input 
+                            type="date" 
+                            id="registrar-fecha-nacimiento" 
+                            name="fechaNacimiento" 
+                            required 
+                            max="2006-12-31"
+                            aria-describedby="registrar-fecha-error"
+                            aria-label="Fecha de nacimiento">
+                        <span id="registrar-fecha-error" class="error-message" role="alert"></span>
+                        <small class="form-hint">(Fecha de nacimiento, explorado no nos cuentes de que materiales eres, ya te tenemos estudiado y sabemos eso, no seas como  los del planeta de al lado)</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="registrar-email">Intercomunicador de Contacto</label>
+                        <input 
+                            type="email" 
+                            id="registrar-email" 
+                            name="email" 
+                            autocomplete="email"
+                            aria-describedby="registrar-email-error"
+                            placeholder="Correo Electronico (Email)">
+                        <span id="registrar-email-error" class="error-message" role="alert"></span>
+                        <small class="form-hint">Este intercomunicador sera tu comunicación si pierdes el aceeso al nuestro planeta o tenemos nuevas noticías</small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Registrar
+                    </button>
+                    
+                    <div class="form-footer">
+                        <p>¿Ya estas dentro del mundo? <a href="#" onclick="showScreen('login-screen'); return false;" class="link">Inicia sesión aquí</a></p>
+                    </div>
+                </form>
+                
+                <button class="btn btn-text" onclick="showScreen('home-screen')">
+                    ← Volver al inicio
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Programa Cerrado -->
+    <div id="closed-program-screen" class="screen">
+        <div class="container">
+            <div class="error-container">
+                <div class="error-icon">🚫</div>
+                <h2>Programa de Ingreso Cerrado</h2>
+                <p class="error-text">El programa de ingreso a nuevos Exploradores está cerrado, Vuelve pronto tal vez los gobernantes necesiten nuevas exploraciones de este mundo pronto</p>
+                
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="showScreen('home-screen')">
+                        ← Volver al Inicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Errores -->
+    <div id="error-screen" class="screen">
+        <div class="container">
+            <div class="error-container">
+                <div class="error-icon">⚠️</div>
+                <h2 id="error-title">Error</h2>
+                <p id="error-message" class="error-text">Ha ocurrido un error en el sistema</p>
+                
+                <div class="error-details" id="error-details"></div>
+                
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="handleErrorAction('retry')">
+                        🔄 Reintentar
+                    </button>
+                    <button class="btn btn-secondary" onclick="handleErrorAction('back')">
+                        ← Volver
+                    </button>
+                    <button class="btn btn-tertiary" onclick="handleErrorAction('home')">
+                        🏠 Ir al Inicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Éxito -->
+    <div id="success-screen" class="screen">
+        <div class="container">
+            <div class="success-container">
+                <div class="success-icon">✅</div>
+                <h2 id="success-title">¡Bienvenido!</h2>
+                <p id="success-message" class="success-text">Operación completada exitosamente</p>
+                
+                <div class="success-info" id="success-info"></div>
+                
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="showScreen('home-screen')">
+                        🎮 Ir al Juego
+                    </button>
+                    <button class="btn btn-secondary" onclick="showScreen('home-screen')">
+                        ← Volver al Inicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
